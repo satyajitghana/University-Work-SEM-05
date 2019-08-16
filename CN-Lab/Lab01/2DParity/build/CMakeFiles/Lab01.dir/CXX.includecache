@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/data/CN-Lab/Lab01/2DParity/main.cpp
+iostream
+-
+string
+-
+vector
+-
+parity.hpp
+/mnt/data/CN-Lab/Lab01/2DParity/parity.hpp
+
+/mnt/data/CN-Lab/Lab01/2DParity/parity.hpp
+vector
+-
+
