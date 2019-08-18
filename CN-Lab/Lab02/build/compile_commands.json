@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/build",
+  "command": "/bin/g++    -g   -o CMakeFiles/Lab02.dir/main.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab02/main.cpp",
+  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/main.cpp"
+},
+{
+  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/build",
+  "command": "/bin/g++    -g   -o CMakeFiles/Lab02.dir/crc_lib.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.cpp",
+  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.cpp"
+}
+]

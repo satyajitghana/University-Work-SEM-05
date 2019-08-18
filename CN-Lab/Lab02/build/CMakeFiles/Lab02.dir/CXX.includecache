@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.cpp
+crc_lib.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
+iostream
+-
+tuple
+-
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
+bitset
+-
+vector
+-
+tuple
+-
+
