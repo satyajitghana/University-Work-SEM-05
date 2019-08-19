@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/data/CN-Lab/Lab01/1DParity
+CMAKE_SOURCE_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/data/CN-Lab/Lab01/1DParity/build
+CMAKE_BINARY_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/build
 
 # Utility rule file for NightlyUpdate.
 
@@ -71,6 +71,6 @@ CMakeFiles/NightlyUpdate.dir/clean:
 .PHONY : CMakeFiles/NightlyUpdate.dir/clean
 
 CMakeFiles/NightlyUpdate.dir/depend:
-	cd /mnt/data/CN-Lab/Lab01/1DParity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/data/CN-Lab/Lab01/1DParity /mnt/data/CN-Lab/Lab01/1DParity /mnt/data/CN-Lab/Lab01/1DParity/build /mnt/data/CN-Lab/Lab01/1DParity/build /mnt/data/CN-Lab/Lab01/1DParity/build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/build /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/build /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyUpdate.dir/depend
 

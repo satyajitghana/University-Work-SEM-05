@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/build",
+  "command": "/bin/g++    -g   -o CMakeFiles/Lab04.dir/main.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab04/main.cpp",
+  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/main.cpp"
+}
+]

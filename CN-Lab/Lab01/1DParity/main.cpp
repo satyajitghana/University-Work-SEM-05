@@ -25,20 +25,21 @@ int main(int, char**) {
 
     ParityData pdata(sender_data, parity_option);
 
+    std::cout << "Parity Bit : " << pdata.get_parity_bit() << std::endl;
+
+    std::cout << "Data Transmitted : " << input_line << pdata.get_parity_bit() << std::endl;
+
     std::cout << "Enter the Data from Receiver : ";
+    std::cin.ignore();
     std::getline(std::cin, input_line);
-    input_line.clear();
-    std::cin.sync();
-    std::getline(std::cin, input_line);
+    unsigned short parity_bit = input_line.back() - '0';
+    input_line.pop_back();
     for (const char &c : input_line) {
         if (c != ' ') {
             receiver_data.push_back(c-'0');
         }
     }
-    std::cout << "Enter Parity Bit : ";
-    unsigned short parity_bit;
-    std::cin >> parity_bit;
-    
+
     bool is_correct = pdata.check_with_received(receiver_data, parity_bit);
 
     is_correct ? std::cout << "CORRECT" : std::cout << "INVALID";

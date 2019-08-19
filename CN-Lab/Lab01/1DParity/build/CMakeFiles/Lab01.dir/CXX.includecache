@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/main.cpp
+iostream
+-
+string
+-
+vector
+-
+parity.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/parity.hpp
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/parity.cpp
+parity.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/parity.hpp
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/parity.hpp
+vector
+-
+

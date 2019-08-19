@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/graph.hpp
+vector
+-
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.cpp
+network.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
+random
+-
+iostream
+-
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
+vector
+-
+math.h
+-
+graph.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/graph.hpp
+

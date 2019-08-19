@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/data/CN-Lab/Lab01/1DParity
+# Install script for directory: /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/data/CN-Lab/Lab01/1DParity/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/1DParity/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
