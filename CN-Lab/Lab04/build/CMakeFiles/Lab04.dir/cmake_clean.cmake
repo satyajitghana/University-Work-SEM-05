@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Lab04.dir/graph.cpp.o"
   "CMakeFiles/Lab04.dir/main.cpp.o"
+  "CMakeFiles/Lab04.dir/routing_table.cpp.o"
   "Lab04"
   "Lab04.pdb"
 )

@@ -3,5 +3,15 @@
   "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/build",
   "command": "/bin/g++    -g   -o CMakeFiles/Lab04.dir/main.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab04/main.cpp",
   "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/main.cpp"
+},
+{
+  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/build",
+  "command": "/bin/g++    -g   -o CMakeFiles/Lab04.dir/graph.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab04/graph.cpp",
+  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/graph.cpp"
+},
+{
+  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/build",
+  "command": "/bin/g++    -g   -o CMakeFiles/Lab04.dir/routing_table.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab04/routing_table.cpp",
+  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/routing_table.cpp"
 }
 ]

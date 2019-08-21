@@ -1,1 +1,1 @@
-/bin/g++  -g  -rdynamic CMakeFiles/Lab04.dir/main.cpp.o  -o Lab04 
+/bin/g++  -g  -rdynamic CMakeFiles/Lab04.dir/main.cpp.o CMakeFiles/Lab04.dir/graph.cpp.o CMakeFiles/Lab04.dir/routing_table.cpp.o  -o Lab04 

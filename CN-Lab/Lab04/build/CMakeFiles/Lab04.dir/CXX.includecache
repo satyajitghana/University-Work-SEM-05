@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/graph.hpp
+vector
+-
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/routing_table.cpp
+routing_table.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/routing_table.hpp
+limits
+-
+iostream
+-
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/routing_table.hpp
+graph.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab04/graph.hpp
+

@@ -520,6 +520,33 @@ ContinuousConfigure/fast:
 	$(MAKE) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
+graph.o: graph.cpp.o
+
+.PHONY : graph.o
+
+# target to build an object file
+graph.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/graph.cpp.o
+.PHONY : graph.cpp.o
+
+graph.i: graph.cpp.i
+
+.PHONY : graph.i
+
+# target to preprocess a source file
+graph.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/graph.cpp.i
+.PHONY : graph.cpp.i
+
+graph.s: graph.cpp.s
+
+.PHONY : graph.s
+
+# target to generate assembly for a file
+graph.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/graph.cpp.s
+.PHONY : graph.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -546,6 +573,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+routing_table.o: routing_table.cpp.o
+
+.PHONY : routing_table.o
+
+# target to build an object file
+routing_table.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/routing_table.cpp.o
+.PHONY : routing_table.cpp.o
+
+routing_table.i: routing_table.cpp.i
+
+.PHONY : routing_table.i
+
+# target to preprocess a source file
+routing_table.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/routing_table.cpp.i
+.PHONY : routing_table.cpp.i
+
+routing_table.s: routing_table.cpp.s
+
+.PHONY : routing_table.s
+
+# target to generate assembly for a file
+routing_table.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab04.dir/build.make CMakeFiles/Lab04.dir/routing_table.cpp.s
+.PHONY : routing_table.cpp.s
 
 # Help Target
 help:
@@ -587,9 +641,15 @@ help:
 	@echo "... NightlyCoverage"
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousConfigure"
+	@echo "... graph.o"
+	@echo "... graph.i"
+	@echo "... graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... routing_table.o"
+	@echo "... routing_table.i"
+	@echo "... routing_table.s"
 .PHONY : help
 
 
