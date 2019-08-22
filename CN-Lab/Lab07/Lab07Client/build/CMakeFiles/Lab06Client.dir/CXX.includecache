@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp
+arpa/inet.h
+-
+stdio.h
+-
+string.h
+-
+sys/socket.h
+-
+unistd.h
+-
+iostream
+-
+
