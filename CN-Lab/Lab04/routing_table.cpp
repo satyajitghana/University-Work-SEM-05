@@ -5,7 +5,15 @@
 
 RoutingTable::RoutingTable(int nodes) : nodes(nodes), dist_matrix(nodes) { }
 
-RoutingTable::RoutingTable(std::vector<std::vector<int>>& adj_matrix) : RoutingTable(adj_matrix.size()) { }
+RoutingTable::RoutingTable(std::vector<std::vector<int>>& adj_matrix) : RoutingTable(adj_matrix.size()) {
+    for (int i = 0 ; i < adj_matrix.size() ; i++) {
+        for (int j = 0 ; j < adj_matrix.size() ; j++) {
+            if (adj_matrix.at(i).at(j) > 0) {
+                nodes.add_edge(i, j, adj_matrix.at(i).at(j));
+            }
+        }
+    }
+}
 
 void RoutingTable::print_routing_table() {
     int i = 0;

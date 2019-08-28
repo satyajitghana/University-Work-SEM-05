@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/data/CN-Lab/Lab01/2DParity
+CMAKE_SOURCE_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/data/CN-Lab/Lab01/2DParity/build
+CMAKE_BINARY_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,7 +92,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/data/CN-Lab/Lab01/2DParity/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -113,9 +113,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles /mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

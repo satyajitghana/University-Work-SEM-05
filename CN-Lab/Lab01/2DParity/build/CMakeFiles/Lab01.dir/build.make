@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/data/CN-Lab/Lab01/2DParity
+CMAKE_SOURCE_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/data/CN-Lab/Lab01/2DParity/build
+CMAKE_BINARY_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Lab01.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/Lab01.dir/flags.make
 
 CMakeFiles/Lab01.dir/main.cpp.o: CMakeFiles/Lab01.dir/flags.make
 CMakeFiles/Lab01.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab01.dir/main.cpp.o"
-	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab01.dir/main.cpp.o -c /mnt/data/CN-Lab/Lab01/2DParity/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab01.dir/main.cpp.o"
+	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab01.dir/main.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp
 
 CMakeFiles/Lab01.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab01.dir/main.cpp.i"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/data/CN-Lab/Lab01/2DParity/main.cpp > CMakeFiles/Lab01.dir/main.cpp.i
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp > CMakeFiles/Lab01.dir/main.cpp.i
 
 CMakeFiles/Lab01.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab01.dir/main.cpp.s"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/data/CN-Lab/Lab01/2DParity/main.cpp -o CMakeFiles/Lab01.dir/main.cpp.s
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp -o CMakeFiles/Lab01.dir/main.cpp.s
 
 CMakeFiles/Lab01.dir/parity.cpp.o: CMakeFiles/Lab01.dir/flags.make
 CMakeFiles/Lab01.dir/parity.cpp.o: ../parity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab01.dir/parity.cpp.o"
-	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab01.dir/parity.cpp.o -c /mnt/data/CN-Lab/Lab01/2DParity/parity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab01.dir/parity.cpp.o"
+	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab01.dir/parity.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp
 
 CMakeFiles/Lab01.dir/parity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab01.dir/parity.cpp.i"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/data/CN-Lab/Lab01/2DParity/parity.cpp > CMakeFiles/Lab01.dir/parity.cpp.i
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp > CMakeFiles/Lab01.dir/parity.cpp.i
 
 CMakeFiles/Lab01.dir/parity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab01.dir/parity.cpp.s"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/data/CN-Lab/Lab01/2DParity/parity.cpp -o CMakeFiles/Lab01.dir/parity.cpp.s
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp -o CMakeFiles/Lab01.dir/parity.cpp.s
 
 # Object files for target Lab01
 Lab01_OBJECTS = \
@@ -95,7 +95,7 @@ Lab01: CMakeFiles/Lab01.dir/main.cpp.o
 Lab01: CMakeFiles/Lab01.dir/parity.cpp.o
 Lab01: CMakeFiles/Lab01.dir/build.make
 Lab01: CMakeFiles/Lab01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab01.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/Lab01.dir/clean:
 .PHONY : CMakeFiles/Lab01.dir/clean
 
 CMakeFiles/Lab01.dir/depend:
-	cd /mnt/data/CN-Lab/Lab01/2DParity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/data/CN-Lab/Lab01/2DParity /mnt/data/CN-Lab/Lab01/2DParity /mnt/data/CN-Lab/Lab01/2DParity/build /mnt/data/CN-Lab/Lab01/2DParity/build /mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles/Lab01.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles/Lab01.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Lab01.dir/depend
 

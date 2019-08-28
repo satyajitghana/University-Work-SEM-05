@@ -27,6 +27,7 @@ int main(int, char**) {
     std::string input;
     std::getline(std::cin, input);
 
+    // pad extra zero to make the number of bits a multiple of 8
     unsigned to_pad = input.size() % 8 != 0 ? (8 - input.size() % 8) : 0;
     for (int i = 0 ; i < to_pad ; i++) {
         input = "0"+input;

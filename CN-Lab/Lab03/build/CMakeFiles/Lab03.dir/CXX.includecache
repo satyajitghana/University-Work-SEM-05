@@ -10,13 +10,11 @@
 vector
 -
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.cpp
-network.hpp
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
-random
--
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/main.cpp
 iostream
 -
+network.hpp
+/mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
 
 /mnt/data/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
 vector

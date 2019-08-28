@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/data/CN-Lab/Lab01/2DParity
+CMAKE_SOURCE_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/data/CN-Lab/Lab01/2DParity/build
+CMAKE_BINARY_DIR = /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build
 
 # Utility rule file for ContinuousTest.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousTest.dir/clean:
 .PHONY : CMakeFiles/ContinuousTest.dir/clean
 
 CMakeFiles/ContinuousTest.dir/depend:
-	cd /mnt/data/CN-Lab/Lab01/2DParity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/data/CN-Lab/Lab01/2DParity /mnt/data/CN-Lab/Lab01/2DParity /mnt/data/CN-Lab/Lab01/2DParity/build /mnt/data/CN-Lab/Lab01/2DParity/build /mnt/data/CN-Lab/Lab01/2DParity/build/CMakeFiles/ContinuousTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build/CMakeFiles/ContinuousTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousTest.dir/depend
 

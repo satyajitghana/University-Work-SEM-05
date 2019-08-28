@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /mnt/data/CN-Lab/Lab01/2DParity
-BuildDirectory: /mnt/data/CN-Lab/Lab01/2DParity/build
+SourceDirectory: /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity
+BuildDirectory: /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/mnt/data/CN-Lab/Lab01/2DParity"
+ConfigureCommand: "/usr/bin/cmake" "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

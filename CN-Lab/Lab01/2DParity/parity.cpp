@@ -1,5 +1,7 @@
 #include "parity.hpp"
 
+#include <iostream>
+
 ParityData::ParityData(
     const std::vector<unsigned short>& data, 
     unsigned short split, 
@@ -37,6 +39,18 @@ ParityData::ParityData(
             unsigned short col_parity_bit = ParityData::calculate_parity_bit(temp, parity_option);
             this -> column_parity_bits.push_back(col_parity_bit);
         }
+
+        for (unsigned i = 0 ; i < rows ; i++) {
+            for (unsigned j = 0 ; j < cols ; j++) {
+                std::cout << this -> data.at(i).at(j);
+            }
+            std::cout << this -> row_parity_bits.at(i);
+        }
+        for (unsigned i = 0 ; i < this -> column_parity_bits.size() ; i++) {
+            std::cout << this -> column_parity_bits.at(i);
+        }
+        std::cout << std::endl;
+
 }
 
 unsigned short ParityData::calculate_parity_bit(const std::vector<unsigned short>& data, PARITY_OPTION parity_option) {
