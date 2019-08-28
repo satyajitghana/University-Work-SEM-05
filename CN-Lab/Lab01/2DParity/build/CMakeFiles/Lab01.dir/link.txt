@@ -1,1 +1,1 @@
-/bin/g++  -g  -rdynamic CMakeFiles/Lab01.dir/main.cpp.o CMakeFiles/Lab01.dir/parity.cpp.o  -o Lab01 
+/usr/bin/clang++-3.8  -g  -rdynamic CMakeFiles/Lab01.dir/main.cpp.o CMakeFiles/Lab01.dir/parity.cpp.o  -o Lab01 

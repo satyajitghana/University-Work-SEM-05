@@ -1,12 +1,12 @@
 [
 {
-  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build",
-  "command": "/bin/g++    -g   -o CMakeFiles/Lab01.dir/main.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp",
-  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp"
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build",
+  "command": "/usr/bin/clang++-3.8    -g   -o CMakeFiles/Lab01.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp"
 },
 {
-  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build",
-  "command": "/bin/g++    -g   -o CMakeFiles/Lab01.dir/parity.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp",
-  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp"
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build",
+  "command": "/usr/bin/clang++-3.8    -g   -o CMakeFiles/Lab01.dir/parity.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp"
 }
 ]

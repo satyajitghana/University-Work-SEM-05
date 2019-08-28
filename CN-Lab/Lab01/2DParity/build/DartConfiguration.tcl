@@ -4,30 +4,40 @@
 
 
 # Configuration directories and files
-SourceDirectory: /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity
-BuildDirectory: /mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build
+SourceDirectory: /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity
+BuildDirectory: /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: shadowleaf-manjaro
+Site: SHADOWLEAF-ROG
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-g++
+BuildName: Linux-clang++-3.8
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
-SubmitURL: http://
+IsCDash: 
+CDashVersion: 
+QueryCDashVersion: 
+DropSite: 
+DropLocation: 
+DropSiteUser: 
+DropSitePassword: 
+DropSiteMode: 
+DropMethod: http
+TriggerSite: 
+ScpCommand: /usr/bin/scp
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "/opt/cmake/bin/cmake" "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity"
+MakeCommand: /opt/cmake/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -39,7 +49,7 @@ CVSCommand: CVSCOMMAND-NOTFOUND
 CVSUpdateOptions: -d -A -P
 
 # Subversion options
-SVNCommand: /usr/bin/svn
+SVNCommand: SVNCOMMAND-NOTFOUND
 SVNOptions: 
 SVNUpdateOptions: 
 
@@ -62,8 +72,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /bin/g++
-CompilerVersion: 9.1.0
+Compiler: /usr/bin/clang++-3.8
+CompilerVersion: 3.8.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -71,7 +81,7 @@ ValgrindCommand:
 ValgrindCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
+MemoryCheckCommand: /usr/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

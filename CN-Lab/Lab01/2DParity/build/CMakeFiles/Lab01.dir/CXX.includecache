@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/main.cpp
+iostream
+-
+string
+-
+vector
+-
 parity.hpp
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.hpp
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.cpp
+parity.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.hpp
 iostream
 -
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab01/2DParity/parity.hpp
 vector
 -
 
