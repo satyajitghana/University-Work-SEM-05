@@ -60,15 +60,15 @@ include CMakeFiles/Lab02.dir/flags.make
 CMakeFiles/Lab02.dir/main.cpp.o: CMakeFiles/Lab02.dir/flags.make
 CMakeFiles/Lab02.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab02.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab02.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/main.cpp
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab02.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/main.cpp
 
 CMakeFiles/Lab02.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab02.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/main.cpp > CMakeFiles/Lab02.dir/main.cpp.i
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/main.cpp > CMakeFiles/Lab02.dir/main.cpp.i
 
 CMakeFiles/Lab02.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab02.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/main.cpp -o CMakeFiles/Lab02.dir/main.cpp.s
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab02/main.cpp -o CMakeFiles/Lab02.dir/main.cpp.s
 
 # Object files for target Lab02
 Lab02_OBJECTS = \

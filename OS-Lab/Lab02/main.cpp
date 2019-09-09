@@ -28,16 +28,7 @@ int main(int argc, char* argv[]) {
     if ((dest_fd = open(argv[2], O_WRONLY | O_CREAT)) < 0) {
         std::cout << argv[0] << " cannot open : " << argv[2] << std::endl;
 
-        // if ((dest_fd = open(argv[2], O_CREAT)) < 0) {
-        //     std::cout << argv[0] << " cannot create : " << argv[2] << std::endl;
-        //     exit(EXIT_FAILURE);
-        // } else {
-        //     close(dest_fd);
-        //     if ((dest_fd = open(argv[2], O_WRONLY)) < 0) {
-        //         std::cout << argv[0] << " cannot open : " << argv[2] << std::endl;
-        //         exit(EXIT_FAILURE);
-        //     }
-        // }
+        close(source_fd);
 
         exit(EXIT_FAILURE);
     }
@@ -53,6 +44,10 @@ int main(int argc, char* argv[]) {
 
         memset(buffer, 0, sizeof(buffer));
     }
+
+    // close the files
+    close(source_fd);
+    close(dest_fd);
 }
 
 void help(char* name) {
