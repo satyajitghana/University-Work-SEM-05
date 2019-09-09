@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.cpp" "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/build/CMakeFiles/Lab02.dir/crc_lib.cpp.o"
-  "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/main.cpp" "/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/build/CMakeFiles/Lab02.dir/main.cpp.o"
+  "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.cpp" "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/build/CMakeFiles/Lab02.dir/crc_lib.cpp.o"
+  "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/main.cpp" "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/build/CMakeFiles/Lab02.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

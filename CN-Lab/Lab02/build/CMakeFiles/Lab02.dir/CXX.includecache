@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.cpp
+crc_lib.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
+iostream
+-
+tuple
+-
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
 bitset
 -
 vector
@@ -14,7 +22,7 @@ vector
 tuple
 -
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/main.cpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/main.cpp
 iostream
 -
 bitset
@@ -22,5 +30,5 @@ bitset
 vector
 -
 crc_lib.hpp
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab02/crc_lib.hpp
 
