@@ -6,7 +6,6 @@
 package lab02;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -64,26 +63,26 @@ public class Lab02 {
             SIM_TAB.get("IDLE").set(i, SIM_TAB.get("AT").get(i) - SIM_TAB.get("SE").get(i-1) >= 0 ? SIM_TAB.get("AT").get(i) - SIM_TAB.get("SE").get(i-1) : 0);
         }
 
-//        System.out.println("REQNO\tIAT\tAT\tSS\tSE\tST\tWAIT\tIDLE");
-//        for (int i = 1; i <= N; i++) {
-//            String out = i + "\t"
-//                    + SIM_TAB.get("IAT").get(i) + "\t"
-//                    + SIM_TAB.get("AT").get(i) + "\t"
-//                    + SIM_TAB.get("SS").get(i) + "\t"
-//                    + SIM_TAB.get("SE").get(i) + "\t"
-//                    + SIM_TAB.get("ST").get(i) + "\t"
-//                    + SIM_TAB.get("WAIT").get(i) + "\t"
-//                    + SIM_TAB.get("IDLE").get(i);
-//            System.out.println(out);
-//        }
+        System.out.println("REQNO\tIAT\tAT\tSS\tSE\tST\tWAIT\tIDLE");
+        for (int i = 1; i <= N; i++) {
+            String out = i + "\t"
+                    + SIM_TAB.get("IAT").get(i) + "\t"
+                    + SIM_TAB.get("AT").get(i) + "\t"
+                    + SIM_TAB.get("SS").get(i) + "\t"
+                    + SIM_TAB.get("SE").get(i) + "\t"
+                    + SIM_TAB.get("ST").get(i) + "\t"
+                    + SIM_TAB.get("WAIT").get(i) + "\t"
+                    + SIM_TAB.get("IDLE").get(i);
+            System.out.println(out);
+        }
         
         // Avg WAIT, Avg. Ser, Avg. IAT
         OptionalDouble avgWAIT = SIM_TAB.get("WAIT").stream().mapToDouble(a -> a).average();
         OptionalDouble avgService = SIM_TAB.get("ST").stream().mapToDouble(a -> a).average();
         OptionalDouble avgIAT = SIM_TAB.get("IAT").stream().mapToDouble(e -> e).average();
-        System.out.println("Average WAIT : " + avgWAIT);
-        System.out.println("Averate Service Time : " + avgService);
-        System.out.println("Averate IAT : " + avgIAT);
+        System.out.println("Average WAIT : " + avgWAIT.getAsDouble());
+        System.out.println("Averate Service Time : " + avgService.getAsDouble());
+        System.out.println("Averate IAT : " + avgIAT.getAsDouble());
     }
 
 }
