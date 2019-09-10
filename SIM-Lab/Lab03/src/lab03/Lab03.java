@@ -5,16 +5,9 @@
  */
 package lab03;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 /**
  *
@@ -35,6 +28,26 @@ public class Lab03 {
         }
     }
     
+    public static int[] prepareProbDist(double prob[], int ass_prob[]) {
+        int[] cumulativeProb = new int[ass_prob.length];
+        int[] prob_lookup = new int[101];
+        
+        cumulativeProb[0] = (int)(prob[0] * 100);
+        
+        for (int i = 1 ; i < cumulativeProb.length ; i++) {
+            cumulativeProb[i] = (int)(cumulativeProb[i-1] + prob[i] * 100);
+        }
+        
+        int start = 0;
+        for (int i = 0 ; i < cumulativeProb.length ; i++) {
+            int end = cumulativeProb[i];
+            fillArray(prob_lookup, ass_prob[i], start, end);
+            start = end;
+        }
+        
+        return prob_lookup;
+    }
+    
     /**
      *
      * @param args
@@ -48,55 +61,15 @@ public class Lab03 {
         
         double[] IATPROB = {0.25, 0.40, 0.20, 0.15};
         int[] IAT_ASS = {1, 2, 3, 4}; // IAT Associated
-        int[] IATDIST = new int[101]; // cumulative probability
-        
-        IATDIST[0] = (int)(IATPROB[0] * 100);
-        for (int i = 1 ; i < IATDIST.length ; i++) {
-            IATDIST[i] = (int)(IATDIST[i-1] + IATPROB[i] * 100);
-        }
-        
-        // IAT Lookup
-        int start = 0;
-        int end;
-        for (int i = 0 ; i < IATDIST.length ; i++) {
-            end = IATDIST[i];
-            fillArray(IATDIST, IAT_ASS[i], start, end);
-            start = end;
-        }
+        int[] IAT_LOOKUP = prepareProbDist(IATPROB, IAT_ASS);
         
         double[] APROB = {0.30, 0.28, 0.25, 0.17};
         int[] AST_ASS = {2, 3, 4, 5};
-        int[] ASTDIST = new int[101];
-        
-        ASTDIST[0] = (int)(APROB[0] * 100);
-        for (int i = 1 ; i < ASTDIST.length ; i++) {
-            ASTDIST[i] = (int)(ASTDIST[i-1] + APROB[i] * 100);
-        }
-        
-        // AST Lookup
-        start = 0;
-        for (int i = 0 ; i < ASTDIST.length ; i++) {
-            end = ASTDIST[i];
-            fillArray(IATDIST, AST_ASS[i], start, end);
-            start = end;        }
-        
+        int[] AST_LOOKUP = prepareProbDist(APROB, AST_ASS);
+
         double[] BPROB = {0.35, 0.25, 0.20, 0.20};
         int[] BST_ASS = {3, 4, 5, 6};
-        int[] BSTDIST = new int[101];
-        
-        BSTDIST[0] = (int)(BPROB[0] * 100);
-        for (int i = 1 ; i < BSTDIST.length ; i++) {
-            BSTDIST[i] = (int)(BSTDIST[i-1] + BPROB[i] * 100);
-        }
-        
-        // BST Lookup
-        start = 0;
-        for (int i = 0 ; i < BSTDIST.length ; i++) {
-            end = BSTDIST[i];
-            fillArray(IATDIST, BST_ASS[i], start, end);
-            start = end;
-        }
-
+        int[] BST_LOOKUP = prepareProbDist(BPROB, BST_ASS);
         
         // generate IAT, AST, BST
         
@@ -138,7 +111,8 @@ public class Lab03 {
             // generate random number from 0 to 100
             int randNum = rand.nextInt(101);
             
-            IAT[i] = IATDIST[randNum]; 
+            // get a random IAT from the lookup table
+            IAT[i] = IAT_LOOKUP[randNum]; 
             
             AT[i] = AT[i-1] + IAT[i];
             
@@ -146,12 +120,16 @@ public class Lab03 {
             boolean bakerIsFree = BSE[idxBakerLastBusy] <= AT[i];
             
             if (ableIsFree) {
-                ST[i] = ASTDIST[randNum];
+                // get a random service time for Able
+                ST[i] = AST_LOOKUP[randNum];
+                
                 ASS[i] = AT[i]; ASE[i] = AT[i] + ST[i];
                 TIS[i] = AT[i] - ASE[i]; WAIT[i] = ASS[i] - AT[i];
                 idxAbleLastBusy = i;
             } else if (bakerIsFree) {
-                ST[i] = BSTDIST[randNum];
+                // get a random serivce time for Baker
+                ST[i] = BST_LOOKUP[randNum];
+                
                 BSS[i] = AT[i]; BSE[i] = AT[i] + ST[i];
                 TIS[i] = AT[i] - BSE[i]; WAIT[i] = BSS[i] - AT[i];
                 idxBakerLastBusy = i;
@@ -161,13 +139,15 @@ public class Lab03 {
                 boolean isAbleFreeFirst = ASE[idxAbleLastBusy] <= BSE[idxBakerLastBusy];
                 
                 if (isAbleFreeFirst) { // able is free first
-                    ST[i] = ASTDIST[randNum];
+                    ST[i] = AST_LOOKUP[randNum];
+                    
                     ASS[i] = ASE[idxAbleLastBusy]; ASE[i] = ASE[idxAbleLastBusy] + ST[i];
                     TIS[i] = AT[i] - ASE[i]; WAIT[i] = ASS[i] - AT[i];
                     
                     idxAbleLastBusy = i;
                 } else { // baker is free first
-                    ST[i] = BSTDIST[randNum];
+                    ST[i] = BST_LOOKUP[randNum];
+                    
                     BSS[i] = BSE[idxBakerLastBusy]; BSE[i] = BSE[idxBakerLastBusy] + ST[i];
                     TIS[i] = AT[i] - BSE[i]; WAIT[i] = BSS[i] - AT[i];
                     
@@ -175,6 +155,7 @@ public class Lab03 {
                 }
             }
             
+            // mat pucho ye bakwaas kahe kiye hum
             TIS[i] *= -1;
             
         }
