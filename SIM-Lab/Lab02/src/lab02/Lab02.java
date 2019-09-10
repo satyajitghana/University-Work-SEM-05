@@ -31,6 +31,22 @@ public class Lab02 {
         Integer N = input.nextInt();
 
         Random rand = new Random();
+        
+        // Taking it as input
+//        List<Integer> IAT = new ArrayList<>();
+//        List<Integer> ST = new ArrayList<>();
+//        IAT.add(0);
+//        ST.add(0);
+//        
+//        System.out.print("Enter IAT's : ");
+//        for (int i = 0 ; i < N ; i++) {
+//            IAT.add(input.nextInt());
+//        }
+//        
+//        System.out.print("Enter ST's : ");
+//        for (int i = 0 ; i < N ; i++) {
+//            ST.add(input.nextInt());
+//        }
 
         // Inter Arrival Times range from 1 - 8 mins
         List<Integer> IAT = IntStream.range(0, N + 1).mapToObj(i -> rand.nextInt(8) + 1).collect(Collectors.toList());
