@@ -77,12 +77,6 @@ public class Lab03 {
         int[] AST = new int[N+1];
         int[] BST = new int[N+1];
         
-//        for (int i = 1 ; i <= N ; i++ ) {
-//            // generate a random number from 0 to 100
-//           
-//        }
-
-        
 //        int[] IAT = new int[N+1];
         int[] ST = new int[N+1];
         int[] AT = new int[N+1];
