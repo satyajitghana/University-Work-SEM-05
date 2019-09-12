@@ -8,8 +8,8 @@
 #include <stdio.h>
 
 // program parameters
-#define TOTAL_SUBJECTS 5
-#define NUM_STUDENTS 2
+#define TOTAL_SUBJECTS 10
+#define NUM_STUDENTS 10
 
 class Student {
     public:
@@ -63,6 +63,8 @@ struct thread_data {
 void* my_thread_fun(void* vargp) {
     thread_data* this_data = (thread_data*) vargp;
 
+    std::cout.sync_with_stdio(true);
+
     std::cout << "[ Thread ID : " << pthread_self() << " ]"<< std::endl;
     std::cout << "Total Marks for Student ID : " << this_data -> student.get_id() << " is : " << this_data -> student.get_total() << std::endl;
 
@@ -73,11 +75,36 @@ void* my_thread_fun(void* vargp) {
     return NULL;
 }
 
+void* say_hello(void* vargp) {
+
+    std::cout << "Hello World from Thread : " << *(pthread_t*)vargp << std::endl;
+
+    return NULL;
+}
+
 #define NUM_THREADS NUM_STUDENTS
 
 thread_data thr_data[NUM_THREADS];
 
 int main(int, char**) {
+    std::cout.sync_with_stdio(true);
+
+    pthread_t thread_id[3];
+
+    // Say Hello from 3 different threads
+    for (short i = 0 ; i < 3 ; i++) {
+        if ((pthread_create(&thread_id[i], NULL, say_hello, &thread_id[i])) < 0) {
+            std::cerr << "Error creating thread" << std::endl;
+
+            return EXIT_FAILURE;
+        }
+    }
+
+    for (short i = 0 ; i < 3 ; i++) {
+        pthread_join(thread_id[i], NULL);
+    }
+
+    std::cout << std::endl;
 
     std::cout << "[ Running with " << NUM_THREADS << " Threads ]\n" << std::endl;
     // create the students and randomly initialize them
