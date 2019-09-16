@@ -10,7 +10,7 @@ int main(int, char**) {
     cin >> order;
     cout << "Enter the Adjacency Matrix : " << endl;
     
-    vector<vector<int>> adj_mat(order);
+    vector<vector<int>> adj_mat;
 
     for (int i = 0 ; i < order ; i++) {
         std::vector<int> row(order);

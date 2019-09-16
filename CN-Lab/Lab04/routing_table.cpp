@@ -3,13 +3,22 @@
 #include <limits>
 #include <iostream>
 
-RoutingTable::RoutingTable(int nodes) : nodes(nodes), dist_matrix(nodes) { }
+RoutingTable::RoutingTable(int nodes) : nodes(nodes), dist_matrix(nodes) {
+    // Initialize the table to 0
+    for (int i = 0 ; i < nodes ; i++) {
+        for (int j = 0 ; j < nodes ; j++) {
+            dist_matrix.at(i).push_back(0);
+        }
+    }
+}
 
 RoutingTable::RoutingTable(std::vector<std::vector<int>>& adj_matrix) : RoutingTable(adj_matrix.size()) {
-    for (int i = 0 ; i < adj_matrix.size() ; i++) {
-        for (int j = 0 ; j < adj_matrix.size() ; j++) {
+    std::cout << adj_matrix.size() << std::endl;
+
+    for (int i = 0 ; i < this -> nodes.order ; i++) {
+        for (int j = 0 ; j < this -> nodes.order ; j++) {
             if (adj_matrix.at(i).at(j) > 0) {
-                nodes.add_edge(i, j, adj_matrix.at(i).at(j));
+                this -> nodes.add_edge(i, j, adj_matrix.at(i).at(j));
             }
         }
     }
@@ -47,10 +56,17 @@ void RoutingTable::apply_bellman_ford() {
         curr_dist.at(src) = 0;
 
         // relax all edges V-1 times
-        for (int k = 0 ; k < this -> nodes.order - 1 ; k++) {
+        for (int k = 0 ; k <= this -> nodes.order - 1 ; k++) {
             for (int i = 0 ; i < this -> nodes.order ; i++) {
                 for (int j = 0 ; j < this -> nodes.order ; j++) {
-                    curr_dist.at(j) = std::min(curr_dist.at(i) + this -> nodes.adj_matrix.at(i).at(j) , curr_dist.at(j));
+                    if (this -> nodes.adj_matrix.at(i).at(j) != 0 && curr_dist.at(i) != std::numeric_limits<int>::max()) {
+                        int weight = this -> nodes.adj_matrix.at(i).at(j);
+                        curr_dist.at(j) = 
+                            std::min(
+                                curr_dist.at(i) + weight, 
+                                curr_dist.at(j)
+                                );
+                    }
                 }
             }
         }
