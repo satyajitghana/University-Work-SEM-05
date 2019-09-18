@@ -1,1 +1,1 @@
-/bin/g++   -lpthread -g    -rdynamic CMakeFiles/Lab03.dir/main.cpp.o  -o Lab03 
+/usr/bin/g++-9  -g  -rdynamic CMakeFiles/Lab03.dir/main.cpp.o CMakeFiles/Lab03.dir/student.cpp.o  -o Lab03 -pthread 

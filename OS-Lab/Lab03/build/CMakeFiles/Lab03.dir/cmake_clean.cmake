@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lab03.dir/main.cpp.o"
-  "Lab03"
+  "CMakeFiles/Lab03.dir/student.cpp.o"
   "Lab03.pdb"
+  "Lab03"
 )
 
 # Per-language clean rules from dependency scanning.

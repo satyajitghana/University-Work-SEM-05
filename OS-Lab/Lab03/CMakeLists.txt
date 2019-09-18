@@ -4,12 +4,12 @@ project(Lab03 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-SET(GCC_COVERAGE_COMPILE_FLAGS "-lpthread")
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
 
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
-SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS}")
+add_executable(${PROJECT_NAME} main.cpp student.hpp student.cpp)
 
-add_executable(Lab03 main.cpp)
+target_link_libraries(Lab03 Threads::Threads)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

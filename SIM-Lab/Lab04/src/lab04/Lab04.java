@@ -75,6 +75,9 @@ public class Lab04 {
                 distr = new PoissonDistribution(currDistr, lambda, K);
             }
             break;
+            default:
+                main(args);
+                return;
         }
 
         if (distr != null) {

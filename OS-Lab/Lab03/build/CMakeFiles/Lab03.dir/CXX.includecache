@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/OS-Lab/Lab03/main.cpp
+/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab03/main.cpp
 iostream
--
-vector
 -
 numeric
 -
-unistd.h
+vector
 -
 pthread.h
 -
+stdio.h
+-
 stdlib.h
 -
-stdio.h
+unistd.h
 -
 
