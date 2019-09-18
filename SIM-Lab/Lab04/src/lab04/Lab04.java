@@ -19,41 +19,70 @@ public class Lab04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        Distribution.DISTR_TYPE currDistr = Distribution.DISTR_TYPE.BINOM;
+        Distribution.DISTR_TYPE currDistr;
 
         Integer choice;
 
-        System.out.print("Enter the Distrubution you want\n1.\tBinomial\n2.\tGeometrical\n3.\tNegative Binomial\nYour Choice : ");
+        System.out.print("Enter the Distrubution you want\n1.\tBinomial\n2.\tGeometrical\n3.\tNegative Binomial\n4.\tPoisson\nYour Choice : ");
         choice = input.nextInt();
 
+        Distribution distr = null;
+
         switch (choice) {
-            case 1:
+            case 1: {
+                // Binomial
                 currDistr = Distribution.DISTR_TYPE.BINOM;
-                break;
-            case 2:
+                System.out.print("Enter N : ");
+                Long N = input.nextLong();
+                System.out.print("Enter X : ");
+                Long K = input.nextLong();
+                System.out.println("Enter P (success) : ");
+                Double P = input.nextDouble();
+
+                distr = new BinomialDistribution(currDistr, N, P, K);
+            }
+            break;
+            case 2: {
+                // Geometrical
                 currDistr = Distribution.DISTR_TYPE.GEOMT;
-                break;
-            case 3:
+                System.out.print("Enter P (success) : ");
+                Double P = input.nextDouble();
+                System.out.print("Enter K : ");
+                Long K = input.nextLong();
+
+                distr = new GeometricDistribution(currDistr, P, K);
+            }
+            break;
+            case 3: {
+                // Negative Binomial
                 currDistr = Distribution.DISTR_TYPE.NBINOM;
-                break;
+                System.out.print("Enter P (success) : ");
+                Double P = input.nextDouble();
+                System.out.print("Enter R : ");
+                Long R = input.nextLong();
+
+                distr = new NegativeBinomialDistribution(currDistr, P, R);
+            }
+            break;
+            case 4: {
+                // Poisson
+                currDistr = Distribution.DISTR_TYPE.POISSON;
+                System.out.print("Enter lambda : ");
+                Double lambda = input.nextDouble();
+                System.out.print("Enter K : ");
+                Long K = input.nextLong();
+
+                distr = new PoissonDistribution(currDistr, lambda, K);
+            }
+            break;
         }
 
-        Long N, K;
-        Double P;
-
-        System.out.print("Enter the number of trials : ");
-        N = input.nextLong();
-
-        System.out.print("Enter the number of success you want out of N : ");
-        K = input.nextLong();
-
-        System.out.print("Enter the probability of success : ");
-        P = input.nextDouble();
-
-        Distribution distr = new Distribution(currDistr, N, K, P);
-
-        System.out.printf("P( X = %d ) = %.10f\nE[X] = %.10f\nVar[X] = %.10f\n",
-                K, distr.getDistribution(), distr.getExpectance(), distr.getVariance());
+        if (distr != null) {
+            System.out.printf("P( X = %d ) = %.10f\nE[X] = %.10f\nVar[X] = %.10f\n",
+                    distr.getParam(), distr.getDistribution(), distr.getExpectance(), distr.getVariance());
+        } else {
+            System.out.println("DISTR IS NULL");
+        }
 
     }
 

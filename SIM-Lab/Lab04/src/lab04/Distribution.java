@@ -11,24 +11,18 @@ package lab04;
  *
  * @author shadowleaf
  */
-public class Distribution {
+public abstract class Distribution {
     
     public static enum DISTR_TYPE {
-        BINOM, GEOMT, NBINOM
+        BINOM, GEOMT, NBINOM, POISSON
     };
 
-    public Distribution(DISTR_TYPE currentDistr, Long N, Long K, Double P) {
+    public Distribution(DISTR_TYPE currentDistr) {
         this.currentDistr = currentDistr;
-        this.N = N;
-        this.K = K;
-        this.P = P;
     }
     
     
-    DISTR_TYPE currentDistr;
-    
-    public Long N, K;
-    public Double P;
+    public DISTR_TYPE currentDistr;
     
     public static Long choose(Long n, Long r) {
         if (r > n/2)
@@ -43,54 +37,18 @@ public class Distribution {
         return ans;
     }
     
-    public Double binomialDistribution() {
-        return choose(N, K) * (double)Math.pow(P, K) * (double)Math.pow( 1 - P, N - K);
-    }
+    public abstract Long getParam();
     
-    public Double geometricDistribution() {
-        return (double)Math.pow(1 - P, K) * P;
-    }
+    /**
+     *
+     * Calculates P(X = K) generally speaking
+     * 
+     * @return
+     */
+    public abstract Double getDistribution();
     
-    public Double negativeBinomialDistribution() {
-        return 0.0;
-    }
+    public abstract Double getExpectance();
     
-    public Double getDistribution() {
-        switch(currentDistr) {
-            case BINOM:
-                return binomialDistribution();
-            case GEOMT:
-                return geometricDistribution();
-            case NBINOM:
-                return negativeBinomialDistribution();
-        }
-        
-        return 0.0;
-    }
+    public abstract Double getVariance();
     
-    public Double getExpectance() {
-        switch(currentDistr) {
-            case BINOM:
-                return N * P;
-            case GEOMT:
-                return (1-P) / P;
-            case NBINOM:
-                return 0.0;
-        }
-        
-        return 0.0;
-    }
-    
-    public Double getVariance() {
-        switch(currentDistr) {
-            case BINOM:
-                return N * P * (1.0 - P);
-            case GEOMT:
-                return (1-P) / (P * P);
-            case NBINOM:
-                return 0.0;
-        }
-        
-        return 0.0;
-    }
 }
