@@ -60,41 +60,41 @@ include CMakeFiles/Lab03.dir/flags.make
 CMakeFiles/Lab03.dir/main.cpp.o: CMakeFiles/Lab03.dir/flags.make
 CMakeFiles/Lab03.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab03.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab03.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab03.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp
 
 CMakeFiles/Lab03.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab03.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp > CMakeFiles/Lab03.dir/main.cpp.i
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp > CMakeFiles/Lab03.dir/main.cpp.i
 
 CMakeFiles/Lab03.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab03.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp -o CMakeFiles/Lab03.dir/main.cpp.s
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp -o CMakeFiles/Lab03.dir/main.cpp.s
 
 CMakeFiles/Lab03.dir/network.cpp.o: CMakeFiles/Lab03.dir/flags.make
 CMakeFiles/Lab03.dir/network.cpp.o: ../network.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab03.dir/network.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab03.dir/network.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab03.dir/network.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp
 
 CMakeFiles/Lab03.dir/network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab03.dir/network.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp > CMakeFiles/Lab03.dir/network.cpp.i
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp > CMakeFiles/Lab03.dir/network.cpp.i
 
 CMakeFiles/Lab03.dir/network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab03.dir/network.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp -o CMakeFiles/Lab03.dir/network.cpp.s
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp -o CMakeFiles/Lab03.dir/network.cpp.s
 
 CMakeFiles/Lab03.dir/graph.cpp.o: CMakeFiles/Lab03.dir/flags.make
 CMakeFiles/Lab03.dir/graph.cpp.o: ../graph.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab03.dir/graph.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab03.dir/graph.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab03.dir/graph.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp
 
 CMakeFiles/Lab03.dir/graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab03.dir/graph.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp > CMakeFiles/Lab03.dir/graph.cpp.i
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp > CMakeFiles/Lab03.dir/graph.cpp.i
 
 CMakeFiles/Lab03.dir/graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab03.dir/graph.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp -o CMakeFiles/Lab03.dir/graph.cpp.s
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp -o CMakeFiles/Lab03.dir/graph.cpp.s
 
 # Object files for target Lab03
 Lab03_OBJECTS = \

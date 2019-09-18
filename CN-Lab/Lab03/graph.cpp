@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-Graph::Graph(int nodes) : adj_list(nodes), order(nodes) { }
+Graph::Graph(int nodes) : adj_list(nodes), order(nodes) {}
 
 void Graph::add_edge(int src, int dest, double weight) {
     if (src >= adj_list.size() || dest >= adj_list.size()) {

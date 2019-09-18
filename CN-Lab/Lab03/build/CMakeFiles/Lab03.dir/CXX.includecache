@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.cpp
+graph.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.hpp
+iostream
+-
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.hpp
+vector
+-
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/main.cpp
+iostream
+-
+network.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.cpp
+network.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
+iostream
+-
+random
+-
+
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/network.hpp
+math.h
+-
+vector
+-
+graph.hpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab03/graph.hpp
+
