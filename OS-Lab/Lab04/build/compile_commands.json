@@ -1,7 +1,7 @@
 [
 {
   "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/build",
-  "command": "/usr/bin/g++-9    -g   -o CMakeFiles/Lab04.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/main.cpp",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Lab04.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/main.cpp",
   "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/main.cpp"
 }
 ]

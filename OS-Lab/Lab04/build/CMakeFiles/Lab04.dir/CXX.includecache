@@ -13,6 +13,14 @@ limits
 -
 numeric
 -
+sstream
+-
+typeinfo
+-
+utility
+-
 vector
+-
+pthread.h
 -
 

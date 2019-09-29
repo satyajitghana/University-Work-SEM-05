@@ -1,9 +1,22 @@
 #include <iostream>
 #include <limits>
 #include <numeric>
+#include <sstream>
+#include <typeinfo>
+#include <utility>
 #include <vector>
 
-struct round_robin_schedule {
+#include <pthread.h>
+
+class scheduling_algo {
+   public:
+    virtual void read_values() = 0;
+    virtual std::vector<unsigned> get_turn_around_times() = 0;
+    virtual double get_avg_tat() = 0;
+};
+
+class round_robin_schedule : public scheduling_algo {
+   public:
     round_robin_schedule(unsigned nprocesses) : nprocesses(nprocesses), cpu_burst_time(nprocesses), time_slice(nprocesses){};
 
     unsigned nprocesses;
@@ -53,30 +66,35 @@ std::vector<unsigned> round_robin_schedule::get_turn_around_times() {
                 sys_time += current_time;
                 cpu_time -= current_time;
 
-                std::cout << "Current Time " << current_time << " ";
-                std::cout << "System Time " << sys_time << ";" << std::endl;
+                // std::cout << "Current Time " << current_time << " ";
+                // std::cout << "System Time " << sys_time << ";" << std::endl;
 
                 if (cpu_time == 0) {  // you are done with this process
                     completion_times[i] = sys_time;
-                    std::cout << "Done With Proc " << i << " at " << sys_time << "\n";
+                    // std::cout << "Done With Proc " << i << " at " << sys_time << "\n";
                 }
             }
             i++;
         }
     } while (!done);
 
-    std::cout << std::endl;
+    std::stringstream out;
 
-    std::cout << "[ CT : ";
+    out << std::endl;
+
+    out << "CT FOR RRS : [ ";
     for (auto TAT : completion_times) {
-        std::cout << TAT << " , ";
+        out << TAT << " , ";
     }
-    std::cout << "]" << std::endl;
+    out << "]" << std::endl;
+
+    std::cout << out.str();
 
     return completion_times;
 }
 
-struct priority_schedule {
+class priority_schedule : public scheduling_algo {
+   public:
     priority_schedule(unsigned nprocesses) : nprocesses(nprocesses), cpu_burst_time(nprocesses), priority(nprocesses){};
 
     unsigned nprocesses;
@@ -123,11 +141,17 @@ std::vector<unsigned> priority_schedule::get_turn_around_times() {
         }
     }
 
-    std::cout << "CT : [ ";
+    std::stringstream out;
+
+    out << std::endl;
+
+    out << "CT FOR PS : [ ";
     for (auto TAT : completion_times) {
-        std::cout << TAT << " , ";
+        out << TAT << " , ";
     }
-    std::cout << "]" << std::endl;
+    out << "]" << std::endl;
+
+    std::cout << out.str();
 
     return completion_times;
 }
@@ -151,28 +175,62 @@ void priority_schedule::read_values() {
     }
 }
 
-int main(int, char**) {
+void* worker_thread(void* schd_obj) {
+    scheduling_algo* sa = static_cast<scheduling_algo*>(schd_obj);
+
+    // compute the stuff
+    double* avg_tat = new double;
+    *avg_tat = sa->get_avg_tat();
+
+    std::stringstream out;
+    out << std::endl;
+    out << "TAT CALCULATED FOR " << typeid(*static_cast<scheduling_algo*>(schd_obj)).name() << " BY TID " << pthread_self() << " : " << *avg_tat << std::endl;
+
+    std::cout << out.str();
+
+    return static_cast<void*>(avg_tat);
+}
+
+int main(int argc, char** argv) {
     using namespace std;
+
+    pthread_t thr_id[2];
+    auto ps_tid = &thr_id[0];
+    auto rrs_tid = &thr_id[1];
 
     round_robin_schedule* RRS = nullptr;
     priority_schedule* PS = nullptr;
 
     unsigned nproc;
-
-    cout << "Priority Scheduling" << endl;
     cout << "Enter the number of processes : ";
     cin >> nproc;
     PS = new priority_schedule(nproc);
+    RRS = new round_robin_schedule(nproc);
+
+    // read the values - main thread
+    cout << "Priority Scheduling" << endl;
     PS->read_values();
+    cout << "Round Robin Scheduling" << endl;
+    RRS->read_values();
 
-    // cout << endl;
-    // cout << "Round Robin Scheduling" << endl;
-    // cout << "Enter the number of processes : ";
-    // cin >> nproc;
-    // RRS = new round_robin_schedule(nproc);
-    // RRS->read_values();
+    // create the threads
+    pthread_create(ps_tid, NULL, worker_thread, PS);
+    pthread_create(rrs_tid, NULL, worker_thread, RRS);
 
-    // double avg_tat = RRS->get_avg_tat();
-    double avg_tat = PS->get_avg_tat();
-    std::cout << "Average TAT : " << avg_tat << std::endl;
+    void *ps_avg_tat, *rrs_avg_tat;
+
+    // join the threads
+    pthread_join(*ps_tid, &ps_avg_tat);
+    pthread_join(*rrs_tid, &rrs_avg_tat);
+
+    cout << endl;
+
+    cout << "PS AVG TAT : " << *static_cast<double*>(ps_avg_tat) << endl;
+    cout << "RRS AVG TAT : " << *static_cast<double*>(rrs_avg_tat) << endl;
+
+    // destroy these
+    delete static_cast<double*>(ps_avg_tat);
+    delete static_cast<double*>(rrs_avg_tat);
+
+    return EXIT_SUCCESS;
 }
