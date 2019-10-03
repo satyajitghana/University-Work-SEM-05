@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/rebuild_cache.dir
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/package.dir
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/edit_cache.dir
@@ -7,3 +8,14 @@
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/rebuild_cache.dir
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/package.dir
+=======
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/package.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/edit_cache.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/package_source.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/edit_cache.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/package_source.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/rebuild_cache.dir
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/package.dir
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e

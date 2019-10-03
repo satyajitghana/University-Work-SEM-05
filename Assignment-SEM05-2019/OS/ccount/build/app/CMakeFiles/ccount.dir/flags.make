@@ -6,5 +6,9 @@ CXX_FLAGS = -g   -pthread -std=gnu++17
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app -I/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/include 
+=======
+CXX_INCLUDES = -I/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app -I/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/include 
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 

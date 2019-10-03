@@ -56,7 +56,9 @@ int main(int argc, char** argv) {
         if (d) {
             while ((dir = readdir(d)) != nullptr) {
                 if (dir->d_type == DT_REG) {
-                    std::shared_ptr<bromine::file> ptr(new bromine::file(dir->d_name));
+                    std::string rel_path(dir->d_name);
+                    rel_path = std::string(argv[optind]) + "/" + rel_path;
+                    std::shared_ptr<bromine::file> ptr(new bromine::file(rel_path));
                     files.emplace_back(ptr);
                 }
             }

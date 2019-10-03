@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
+=======
+# Install script for directory: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +43,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/cmake_install.cmake")
+=======
+  include("/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/cmake_install.cmake")
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 
 endif()
 
@@ -51,5 +59,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

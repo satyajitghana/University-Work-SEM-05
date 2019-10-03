@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.cpp
 file_ops.hpp
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+=======
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.cpp
+file_ops.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 fcntl.h
 -
 stdio.h
@@ -26,13 +32,21 @@ memory
 utility
 -
 
+<<<<<<< HEAD
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+=======
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 map
 -
 string
 -
 
+<<<<<<< HEAD
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/main.cpp
+=======
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/main.cpp
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 algorithm
 -
 iostream
@@ -60,6 +74,7 @@ sys/types.h
 unistd.h
 -
 file_ops.hpp
+<<<<<<< HEAD
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
 threader.hpp
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
@@ -67,6 +82,15 @@ threader.hpp
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.cpp
 threader.hpp
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+=======
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+threader.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.cpp
+threader.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 pthread.h
 -
 iostream
@@ -76,9 +100,15 @@ map
 memory
 -
 file_ops.hpp
+<<<<<<< HEAD
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
 
 /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+=======
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 pthread.h
 -
 vector

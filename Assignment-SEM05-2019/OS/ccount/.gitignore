@@ -1,0 +1,4 @@
+build
+auto_gen_files
+cmake-build-debug
+*.old

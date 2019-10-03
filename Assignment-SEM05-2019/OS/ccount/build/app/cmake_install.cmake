@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app
+=======
+# Install script for directory: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

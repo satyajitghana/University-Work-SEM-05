@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build
+=======
+CMAKE_SOURCE_DIR = /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -70,7 +77,11 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CPackSourceConfig.cmake
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CPackSourceConfig.cmake
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -92,7 +103,11 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && /usr/bin/cpack --config ./CPackConfig.cmake
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && /usr/bin/cpack --config ./CPackConfig.cmake
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : package
 
 # Special rule for the target package
@@ -102,14 +117,24 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/progress.marks
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 0
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/progress.marks
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 0
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/clean
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/clean
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : clean
 
 # The main clean target
@@ -119,22 +144,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : depend
 
 # Convenience name for target.
 app/CMakeFiles/ccount.dir/rule:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/ccount.dir/rule
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/ccount.dir/rule
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : app/CMakeFiles/ccount.dir/rule
 
 # Convenience name for target.
@@ -144,7 +185,11 @@ ccount: app/CMakeFiles/ccount.dir/rule
 
 # fast build rule for target.
 ccount/fast:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/build
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/build
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : ccount/fast
 
 file_ops.o: file_ops.cpp.o
@@ -153,7 +198,11 @@ file_ops.o: file_ops.cpp.o
 
 # target to build an object file
 file_ops.cpp.o:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/file_ops.cpp.o
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/file_ops.cpp.o
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : file_ops.cpp.o
 
 file_ops.i: file_ops.cpp.i
@@ -162,7 +211,11 @@ file_ops.i: file_ops.cpp.i
 
 # target to preprocess a source file
 file_ops.cpp.i:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/file_ops.cpp.i
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/file_ops.cpp.i
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : file_ops.cpp.i
 
 file_ops.s: file_ops.cpp.s
@@ -171,7 +224,11 @@ file_ops.s: file_ops.cpp.s
 
 # target to generate assembly for a file
 file_ops.cpp.s:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/file_ops.cpp.s
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/file_ops.cpp.s
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : file_ops.cpp.s
 
 main.o: main.cpp.o
@@ -180,7 +237,11 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/main.cpp.o
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/main.cpp.o
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -189,7 +250,11 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/main.cpp.i
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/main.cpp.i
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,7 +263,11 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/main.cpp.s
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/main.cpp.s
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : main.cpp.s
 
 threader.o: threader.cpp.o
@@ -207,7 +276,11 @@ threader.o: threader.cpp.o
 
 # target to build an object file
 threader.cpp.o:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/threader.cpp.o
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/threader.cpp.o
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : threader.cpp.o
 
 threader.i: threader.cpp.i
@@ -216,7 +289,11 @@ threader.i: threader.cpp.i
 
 # target to preprocess a source file
 threader.cpp.i:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/threader.cpp.i
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/threader.cpp.i
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : threader.cpp.i
 
 threader.s: threader.cpp.s
@@ -225,7 +302,11 @@ threader.s: threader.cpp.s
 
 # target to generate assembly for a file
 threader.cpp.s:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/threader.cpp.s
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/threader.cpp.s
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : threader.cpp.s
 
 # Help Target
@@ -259,6 +340,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : cmake_check_build_system
 
