@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount
+CMAKE_SOURCE_DIR = /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build
+CMAKE_BINARY_DIR = /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,7 +92,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -102,9 +102,9 @@ package_source/fast: package_source
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

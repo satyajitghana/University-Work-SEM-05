@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app
+# Install script for directory: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

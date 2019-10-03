@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount
+# Install script for directory: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/app/cmake_install.cmake")
+  include("/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

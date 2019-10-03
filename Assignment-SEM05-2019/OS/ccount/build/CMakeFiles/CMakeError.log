@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ca88/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8ca88.dir/build.make CMakeFiles/cmTC_8ca88.dir/build
-make[1]: Entering directory '/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8ca88.dir/CheckSymbolExists.c.o
-/usr/bin/gcc-9    -o CMakeFiles/cmTC_8ca88.dir/CheckSymbolExists.c.o   -c /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_8ca88
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca88.dir/link.txt --verbose=1
-/usr/bin/gcc-9      CMakeFiles/cmTC_8ca88.dir/CheckSymbolExists.c.o  -o cmTC_8ca88 
-CMakeFiles/cmTC_8ca88.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_01031/fast"
+/usr/bin/make -f CMakeFiles/cmTC_01031.dir/build.make CMakeFiles/cmTC_01031.dir/build
+make[1]: Entering directory '/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_01031.dir/CheckSymbolExists.c.o
+/usr/bin/gcc-9    -o CMakeFiles/cmTC_01031.dir/CheckSymbolExists.c.o   -c /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_01031
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01031.dir/link.txt --verbose=1
+/usr/bin/gcc-9      CMakeFiles/cmTC_01031.dir/CheckSymbolExists.c.o  -o cmTC_01031 
+CMakeFiles/cmTC_01031.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8ca88.dir/build.make:97: recipe for target 'cmTC_8ca88' failed
-make[1]: *** [cmTC_8ca88] Error 1
-make[1]: Leaving directory '/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8ca88/fast' failed
-make: *** [cmTC_8ca88/fast] Error 2
+CMakeFiles/cmTC_01031.dir/build.make:97: recipe for target 'cmTC_01031' failed
+make[1]: *** [cmTC_01031] Error 1
+make[1]: Leaving directory '/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_01031/fast' failed
+make: *** [cmTC_01031/fast] Error 2
 
-File /mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

@@ -23,7 +23,7 @@ bromine::file::file(std::string file_name) : file_name(file_name) {
 */
 bromine::file::~file() {
     if (!isclosed) {
-        std::cout << "CLOSING " << this->file_name << std::endl;
+        // std::cout << "CLOSING " << this->file_name << std::endl;
         close(this->fd);
     }
     this->isclosed = true;
@@ -33,10 +33,10 @@ void bromine::file::open(std::string file_name) {
     this->file_name = file_name;
 
     if (this->fd = ::open(this->file_name.c_str(), O_RDONLY); this->fd != -1) {
-        std::cout << "SUCCESSFULLY OPENED " << file_name << std::endl;
+        // std::cout << "SUCCESSFULLY OPENED " << file_name << std::endl;
         this->isclosed = false;
     } else {
-        throw std::runtime_error("ERROR OPENING FILE");
+        throw std::runtime_error("ERROR OPENING FILE : " + file_name);
     }
 }
 

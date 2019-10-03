@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/file_ops.cpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.cpp
 file_ops.hpp
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
 fcntl.h
 -
 stdio.h
@@ -26,13 +26,13 @@ memory
 utility
 -
 
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
 map
 -
 string
 -
 
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/main.cpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/main.cpp
 algorithm
 -
 iostream
@@ -60,13 +60,13 @@ sys/types.h
 unistd.h
 -
 file_ops.hpp
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
 threader.hpp
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
 
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/threader.cpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.cpp
 threader.hpp
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
 pthread.h
 -
 iostream
@@ -76,9 +76,9 @@ map
 memory
 -
 file_ops.hpp
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.hpp
 
-/mnt/d/University-Work/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
+/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.hpp
 pthread.h
 -
 vector
