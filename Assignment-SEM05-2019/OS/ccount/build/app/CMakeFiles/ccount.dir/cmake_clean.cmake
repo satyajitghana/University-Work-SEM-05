@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ccount.dir/main.cpp.o"
   "CMakeFiles/ccount.dir/file_ops.cpp.o"
+  "CMakeFiles/ccount.dir/main.cpp.o"
   "CMakeFiles/ccount.dir/threader.cpp.o"
-  "ccount.pdb"
   "ccount"
+  "ccount.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
