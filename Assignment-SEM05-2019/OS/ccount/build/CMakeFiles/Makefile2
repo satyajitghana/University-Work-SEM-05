@@ -44,7 +44,6 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
 
 # The top-level build directory on which CMake was run.
@@ -67,12 +66,6 @@ clean: app/clean
 preinstall: app/preinstall
 
 .PHONY : preinstall
-=======
-CMAKE_SOURCE_DIR = /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build
->>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 
 #=============================================================================
 # Directory level rules for directory app
@@ -99,24 +92,14 @@ app/preinstall:
 app/CMakeFiles/ccount.dir/all:
 	$(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/depend
 	$(MAKE) -f app/CMakeFiles/ccount.dir/build.make app/CMakeFiles/ccount.dir/build
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles --progress-num=1,2,3,4 "Built target ccount"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles --progress-num=1,2,3,4 "Built target ccount"
->>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : app/CMakeFiles/ccount.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/ccount.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/ccount.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/ccount.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/CMakeFiles 0
->>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
 .PHONY : app/CMakeFiles/ccount.dir/rule
 
 # Convenience name for target.

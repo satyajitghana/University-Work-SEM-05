@@ -1,1 +1,1 @@
-/bin/g++  -g   CMakeFiles/ccount.dir/main.cpp.o CMakeFiles/ccount.dir/file_ops.cpp.o CMakeFiles/ccount.dir/threader.cpp.o  -o ccount -lstdc++fs -pthread 
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/ccount.dir/main.cpp.o CMakeFiles/ccount.dir/file_ops.cpp.o CMakeFiles/ccount.dir/threader.cpp.o  -o ccount -lstdc++fs -pthread 

@@ -1,0 +1,236 @@
+╭─ shadowleaf@shadowleaf-manjaro  …/OS/ccount                                                                                                             ✔  100%  2.41G RAM  11:09:01
+╰─ sh testing.sh
+=============================================================================================================================================================================================
+Building
+
+-- The C compiler identification is GNU 9.1.0
+-- The CXX compiler identification is GNU 9.1.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build
+Scanning dependencies of target ccount
+[ 25%] Building CXX object app/CMakeFiles/ccount.dir/main.cpp.o
+[ 50%] Building CXX object app/CMakeFiles/ccount.dir/file_ops.cpp.o
+[ 75%] Building CXX object app/CMakeFiles/ccount.dir/threader.cpp.o
+[100%] Linking CXX executable ccount
+[100%] Built target ccount
+=============================================================================================================================================================================================
+TESTING PROGRAM TIMES
+
+=============================================================================================================================================================================================
+Generating Files
+
+Generated 400 files with 40000 characters each
+
+=============================================================================================================================================================================================
+Single Threaded Run
+
+ACCUMULATED COUNT
+[ 10 ] -> 250077, [ 32 ] -> 250227, { 0 } -> 250196, { 1 } -> 249770, { 2 } -> 249740, { 3 } -> 249900, { 4 } -> 249420, { 5 } -> 249733, { 6 } -> 249684, { 7 } -> 250012, { 8 } -> 250755, { 9 } -> 249837, { A } -> 250833, { B } -> 249535, { C } -> 249788, { D } -> 249404, { E } -> 250735, { F } -> 250041, { G } -> 249116, { H } -> 249437, { I } -> 250024, { J } -> 250076, { K } -> 249757, { L } -> 249792, { M } -> 249997, { N } -> 249286, { O } -> 250248, { P } -> 251245, { Q } -> 250143, { R } -> 249986, { S } -> 249941, { T } -> 250425, { U } -> 250146, { V } -> 249558, { W } -> 250119, { X } -> 249772, { Y } -> 250862, { Z } -> 250193, { a } -> 249770, { b } -> 249754, { c } -> 250829, { d } -> 249878, { e } -> 250210, { f } -> 251221, { g } -> 249876, { h } -> 249733, { i } -> 249848, { j } -> 250201, { k } -> 250274, { l } -> 249152, { m } -> 248808, { n } -> 250588, { o } -> 249268, { p } -> 250471, { q } -> 250417, { r } -> 249441, { s } -> 250498, { t } -> 250127, { u } -> 249625, { v } -> 249847, { w } -> 249835, { x } -> 250029, { y } -> 251108, { z } -> 249382, 
+
+Real Time Elapsed : 16254268214 nanoseconds
+
+ Performance counter stats for 'build/app/ccount -d auto_gen_files':
+
+         16,259.17 msec task-clock                #    1.000 CPUs utilized          
+                23      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               457      page-faults               #    0.028 K/sec                  
+    32,427,976,735      cycles                    #    1.994 GHz                    
+    25,167,597,262      instructions              #    0.78  insn per cycle         
+     4,871,135,065      branches                  #  299.593 M/sec                  
+        98,651,503      branch-misses             #    2.03% of all branches        
+
+      16.260210888 seconds time elapsed
+
+       8.027201000 seconds user
+       8.206693000 seconds sys
+
+
+=============================================================================================================================================================================================
+Multi Threaded Run
+
+ACCUMULATED COUNT
+[ 10 ] -> 250077, [ 32 ] -> 250227, { 0 } -> 250196, { 1 } -> 249770, { 2 } -> 249740, { 3 } -> 249900, { 4 } -> 249420, { 5 } -> 249733, { 6 } -> 249684, { 7 } -> 250012, { 8 } -> 250755, { 9 } -> 249837, { A } -> 250833, { B } -> 249535, { C } -> 249788, { D } -> 249404, { E } -> 250735, { F } -> 250041, { G } -> 249116, { H } -> 249437, { I } -> 250024, { J } -> 250076, { K } -> 249757, { L } -> 249792, { M } -> 249997, { N } -> 249286, { O } -> 250248, { P } -> 251245, { Q } -> 250143, { R } -> 249986, { S } -> 249941, { T } -> 250425, { U } -> 250146, { V } -> 249558, { W } -> 250119, { X } -> 249772, { Y } -> 250862, { Z } -> 250193, { a } -> 249770, { b } -> 249754, { c } -> 250829, { d } -> 249878, { e } -> 250210, { f } -> 251221, { g } -> 249876, { h } -> 249733, { i } -> 249848, { j } -> 250201, { k } -> 250274, { l } -> 249152, { m } -> 248808, { n } -> 250588, { o } -> 249268, { p } -> 250471, { q } -> 250417, { r } -> 249441, { s } -> 250498, { t } -> 250127, { u } -> 249625, { v } -> 249847, { w } -> 249835, { x } -> 250029, { y } -> 251108, { z } -> 249382, 
+
+Real Time Elapsed : 6437601344 nanoseconds
+
+ Performance counter stats for 'build/app/ccount -dt auto_gen_files':
+
+         25,382.59 msec task-clock                #    3.940 CPUs utilized          
+             8,672      context-switches          #    0.342 K/sec                  
+               297      cpu-migrations            #    0.012 K/sec                  
+             1,389      page-faults               #    0.055 K/sec                  
+    50,630,524,041      cycles                    #    1.995 GHz                    
+    27,080,454,963      instructions              #    0.53  insn per cycle         
+     5,402,435,751      branches                  #  212.840 M/sec                  
+       102,729,192      branch-misses             #    1.90% of all branches        
+
+       6.441977749 seconds time elapsed
+
+      10.174152000 seconds user
+      15.176742000 seconds sys
+
+
+=============================================================================================================================================================================================
+Running Perf . . . (could take a while) 
+
+ACCUMULATED COUNT
+[ 10 ] -> 250077, [ 32 ] -> 250227, { 0 } -> 250196, { 1 } -> 249770, { 2 } -> 249740, { 3 } -> 249900, { 4 } -> 249420, { 5 } -> 249733, { 6 } -> 249684, { 7 } -> 250012, { 8 } -> 250755, { 9 } -> 249837, { A } -> 250833, { B } -> 249535, { C } -> 249788, { D } -> 249404, { E } -> 250735, { F } -> 250041, { G } -> 249116, { H } -> 249437, { I } -> 250024, { J } -> 250076, { K } -> 249757, { L } -> 249792, { M } -> 249997, { N } -> 249286, { O } -> 250248, { P } -> 251245, { Q } -> 250143, { R } -> 249986, { S } -> 249941, { T } -> 250425, { U } -> 250146, { V } -> 249558, { W } -> 250119, { X } -> 249772, { Y } -> 250862, { Z } -> 250193, { a } -> 249770, { b } -> 249754, { c } -> 250829, { d } -> 249878, { e } -> 250210, { f } -> 251221, { g } -> 249876, { h } -> 249733, { i } -> 249848, { j } -> 250201, { k } -> 250274, { l } -> 249152, { m } -> 248808, { n } -> 250588, { o } -> 249268, { p } -> 250471, { q } -> 250417, { r } -> 249441, { s } -> 250498, { t } -> 250127, { u } -> 249625, { v } -> 249847, { w } -> 249835, { x } -> 250029, { y } -> 251108, { z } -> 249382, 
+
+Real Time Elapsed : 16054291007 nanoseconds
+[ perf record: Woken up 10 times to write data ]
+[ perf record: Captured and wrote 2.448 MB perf.data (64132 samples) ]
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 64K of event 'cycles:u'
+# Event count (approx.): 3010282040
+#
+# Overhead  Command  Shared Object        Symbol                                                                                                                                                                                                                                                                                                                                              
+# ........  .......  ...................  ....................................................................................................................................................................................................................................................................................................................................................
+#
+    71.64%  ccount   ccount               [.] bromine::file::get_char_count
+    20.16%  ccount   [unknown]            [k] 0xffffffffa260015f
+     6.52%  ccount   libpthread-2.29.so   [.] __libc_read
+     1.06%  ccount   ccount               [.] read@plt
+     0.13%  ccount   ccount               [.] main
+     0.07%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_insert_and_rebalance
+     0.06%  ccount   [unknown]            [k] 0xffffffffa2600b07
+     0.04%  ccount   libc-2.29.so         [.] _int_malloc
+     0.04%  ccount   libc-2.29.so         [.] malloc
+     0.04%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_copy<std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_Alloc_node>
+     0.03%  ccount   libstdc++.so.6.0.26  [.] std::local_Rb_tree_decrement
+     0.03%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_increment
+     0.03%  ccount   libc-2.29.so         [.] _int_free
+     0.02%  ccount   ld-2.29.so           [.] _dl_lookup_symbol_x
+     0.01%  ccount   libc-2.29.so         [.] cfree@GLIBC_2.2.5
+     0.01%  ccount   ld-2.29.so           [.] do_lookup_x
+     0.01%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_get_insert_hint_unique_pos
+     0.01%  ccount   libstdc++.so.6.0.26  [.] operator new
+     0.01%  ccount   ld-2.29.so           [.] strcmp
+     0.01%  ccount   libstdc++.so.6.0.26  [.] std::locale::_Impl::_M_install_facet
+     0.01%  ccount   ld-2.29.so           [.] _dl_relocate_object
+     0.01%  ccount   ld-2.29.so           [.] _dl_check_map_versions
+     0.00%  ccount   ccount               [.] operator new@plt
+     0.00%  ccount   ccount               [.] std::_Rb_tree_decrement@plt
+     0.00%  ccount   ld-2.29.so           [.] _dl_map_object
+     0.00%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_decrement
+     0.00%  ccount   ccount               [.] std::_Rb_tree_insert_and_rebalance@plt
+     0.00%  ccount   libstdc++.so.6.0.26  [.] operator delete
+     0.00%  ccount   ld-2.29.so           [.] __GI___tunables_init
+
+
+#
+# (Tip: For memory address profiling, try: perf mem record / perf mem report)
+#
+ACCUMULATED COUNT
+[ 10 ] -> 250077, [ 32 ] -> 250227, { 0 } -> 250196, { 1 } -> 249770, { 2 } -> 249740, { 3 } -> 249900, { 4 } -> 249420, { 5 } -> 249733, { 6 } -> 249684, { 7 } -> 250012, { 8 } -> 250755, { 9 } -> 249837, { A } -> 250833, { B } -> 249535, { C } -> 249788, { D } -> 249404, { E } -> 250735, { F } -> 250041, { G } -> 249116, { H } -> 249437, { I } -> 250024, { J } -> 250076, { K } -> 249757, { L } -> 249792, { M } -> 249997, { N } -> 249286, { O } -> 250248, { P } -> 251245, { Q } -> 250143, { R } -> 249986, { S } -> 249941, { T } -> 250425, { U } -> 250146, { V } -> 249558, { W } -> 250119, { X } -> 249772, { Y } -> 250862, { Z } -> 250193, { a } -> 249770, { b } -> 249754, { c } -> 250829, { d } -> 249878, { e } -> 250210, { f } -> 251221, { g } -> 249876, { h } -> 249733, { i } -> 249848, { j } -> 250201, { k } -> 250274, { l } -> 249152, { m } -> 248808, { n } -> 250588, { o } -> 249268, { p } -> 250471, { q } -> 250417, { r } -> 249441, { s } -> 250498, { t } -> 250127, { u } -> 249625, { v } -> 249847, { w } -> 249835, { x } -> 250029, { y } -> 251108, { z } -> 249382, 
+
+Real Time Elapsed : 6606369273 nanoseconds
+[ perf record: Woken up 13 times to write data ]
+[ perf record: Captured and wrote 3.593 MB perf.data (90866 samples) ]
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 90K of event 'cycles:u'
+# Event count (approx.): 4566170565
+#
+# Overhead  Command  Shared Object        Symbol                                                                                                                                                                                                                                                                                                                                              
+# ........  .......  ...................  ....................................................................................................................................................................................................................................................................................................................................................
+#
+    49.57%  ccount   ccount               [.] bromine::file::get_char_count
+    14.77%  ccount   [unknown]            [k] 0xffffffffa260015f
+    12.39%  ccount   libpthread-2.29.so   [.] __libc_read
+    11.72%  ccount   libpthread-2.29.so   [.] __pthread_disable_asynccancel
+     9.57%  ccount   libpthread-2.29.so   [.] __pthread_enable_asynccancel
+     1.29%  ccount   ccount               [.] read@plt
+     0.10%  ccount   [unknown]            [k] 0xffffffffa2600b07
+     0.09%  ccount   libc-2.29.so         [.] malloc
+     0.07%  ccount   ccount               [.] main
+     0.06%  ccount   libc-2.29.so         [.] _int_malloc
+     0.06%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_insert_and_rebalance
+     0.06%  ccount   libc-2.29.so         [.] _int_free
+     0.04%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_copy<std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_Alloc_node>
+     0.02%  ccount   ld-2.29.so           [.] do_lookup_x
+     0.02%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_increment
+     0.02%  ccount   libstdc++.so.6.0.26  [.] std::local_Rb_tree_decrement
+     0.02%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_get_insert_hint_unique_pos
+     0.01%  ccount   libc-2.29.so         [.] arena_get2.part.0
+     0.01%  ccount   ccount               [.] operator new@plt
+     0.01%  ccount   libpthread-2.29.so   [.] start_thread
+     0.01%  ccount   libc-2.29.so         [.] __clone
+     0.01%  ccount   libstdc++.so.6.0.26  [.] operator new
+     0.01%  ccount   libc-2.29.so         [.] _dl_addr
+     0.01%  ccount   libpthread-2.29.so   [.] pthread_create@@GLIBC_2.2.5
+     0.01%  ccount   libstdc++.so.6.0.26  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create
+     0.01%  ccount   ld-2.29.so           [.] _dl_lookup_symbol_x
+     0.01%  ccount   ld-2.29.so           [.] 0x0000000000002084
+     0.01%  ccount   ld-2.29.so           [.] _dl_fixup
+     0.00%  ccount   ld-2.29.so           [.] _dl_relocate_object
+     0.00%  ccount   ld-2.29.so           [.] strcmp
+     0.00%  ccount   libc-2.29.so         [.] __call_tls_dtors
+     0.00%  ccount   ld-2.29.so           [.] check_match
+     0.00%  ccount   ld-2.29.so           [.] strchr
+     0.00%  ccount   libc-2.29.so         [.] __malloc_arena_thread_freeres
+     0.00%  ccount   libc-2.29.so         [.] __mmap
+     0.00%  ccount   libc-2.29.so         [.] __sigsetjmp
+     0.00%  ccount   libc-2.29.so         [.] __ctype_init
+     0.00%  ccount   libc-2.29.so         [.] tcache_init.part.0
+     0.00%  ccount   libc-2.29.so         [.] __getpagesize
+     0.00%  ccount   ld-2.29.so           [.] __GI___tunables_init
+     0.00%  ccount   libc-2.29.so         [.] __memset_avx2_unaligned_erms
+     0.00%  ccount   ld-2.29.so           [.] allocate_dtv
+     0.00%  ccount   libpthread-2.29.so   [.] 0x00000000000077d4
+     0.00%  ccount   ccount               [.] bromine::file::threadable_ccount_fun
+     0.00%  ccount   ccount               [.] std::_Rb_tree_insert_and_rebalance@plt
+     0.00%  ccount   libc-2.29.so         [.] new_heap
+     0.00%  ccount   libpthread-2.29.so   [.] 0x00000000000077d0
+     0.00%  ccount   libc-2.29.so         [.] __strerror_thread_freeres
+     0.00%  ccount   libc-2.29.so         [.] cfree@GLIBC_2.2.5
+     0.00%  ccount   libc-2.29.so         [.] 0x0000000000025330
+     0.00%  ccount   libc-2.29.so         [.] __res_thread_freeres
+     0.00%  ccount   ccount               [.] std::_Rb_tree_decrement@plt
+     0.00%  ccount   libc-2.29.so         [.] _setjmp
+     0.00%  ccount   libc-2.29.so         [.] __memset_avx2_erms
+     0.00%  ccount   ld-2.29.so           [.] _dl_allocate_tls_init
+     0.00%  ccount   libc-2.29.so         [.] __memchr_avx2
+     0.00%  ccount   libpthread-2.29.so   [.] 0x00000000000077f4
+     0.00%  ccount   libc-2.29.so         [.] __madvise
+     0.00%  ccount   libc-2.29.so         [.] __mprotect
+     0.00%  ccount   libc-2.29.so         [.] __GI___get_nprocs
+     0.00%  ccount   [unknown]            [.] 0000000000000000
+
+
+#
+# (Tip: To see callchains in a more compact form: perf report -g folded)
+#
+perf records and output saved to perf_report/
+
+testing took 54 seconds
+
+╭─ shadowleaf@shadowleaf-manjaro  …/OS/ccount                                                                                                             ✔  100%  2.31G RAM  11:12:31
+╰─ 

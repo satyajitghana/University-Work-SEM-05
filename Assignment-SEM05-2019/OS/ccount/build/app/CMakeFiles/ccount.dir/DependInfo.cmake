@@ -4,15 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
   "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.cpp" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir/file_ops.cpp.o"
   "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/main.cpp" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir/main.cpp.o"
   "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.cpp" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir/threader.cpp.o"
-=======
-  "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/file_ops.cpp" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir/file_ops.cpp.o"
-  "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/main.cpp" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir/main.cpp.o"
-  "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/app/threader.cpp" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/OS/ccount/build/app/CMakeFiles/ccount.dir/threader.cpp.o"
->>>>>>> 7508108a542f68ca95e0a25c00745f9fc429e11e
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -5,6 +5,7 @@
 #include <memory>
 #include <numeric>
 #include <vector>
+#include <chrono>
 
 // C Includes
 #include <dirent.h>
@@ -82,6 +83,8 @@ int main(int argc, char** argv) {
     }
 
     std::vector<void*> results;
+ 
+    auto start = std::chrono::high_resolution_clock::now();
 
     if (is_threaded) {  // MULTITHREADED
         // transform into void* vector
@@ -116,8 +119,14 @@ int main(int argc, char** argv) {
         }
     }
 
+    auto end = std::chrono::high_resolution_clock::now();
+
     std::cout << "ACCUMULATED COUNT" << std::endl;
     bromine::file::print_ccount(accumulated_vals);
+
+    auto time_taken = std::chrono::duration_cast<std::chrono::nanoseconds>(end-start).count();
+    // time_taken *= 1e-9; 
+    std::cout << "\nReal Time Elapsed : " << std::fixed << time_taken << " nanoseconds" << std::endl;
 }
 
 void help(char name[]) {
