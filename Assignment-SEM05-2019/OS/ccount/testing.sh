@@ -19,6 +19,10 @@ rm -rf build 2> /dev/null
 mkdir build
 (cd build; cmake -DCMAKE_BUILD_TYPE=Release ..; make)
 
+# Perf Report Directory
+rm -r perf_report &> /dev/null
+mkdir perf_report
+
 print_head "TESTING PROGRAM TIMES"
 
 print_head "Generating Files"
@@ -31,17 +35,14 @@ echo -e "Generated 400 files with 40000 characters each\n"
 
 print_head "Single Threaded Run"
 
-perf stat build/app/ccount -d auto_gen_files 
+perf stat build/app/ccount -d auto_gen_files |& tee perf_report/perf_stat_st.txt
 
 print_head "Multi Threaded Run"
 
-perf stat build/app/ccount -dt auto_gen_files
+perf stat build/app/ccount -dt auto_gen_files |& tee perf_report/perf_stat_mt.txt
 
 # Run Perf Benchmarks and save to file
 print_head "Running Perf . . . (could take a while) "
-
-rm -r perf_report &> /dev/null
-mkdir perf_report
 
 # single threaded run
 perf record -s build/app/ccount -d auto_gen_files

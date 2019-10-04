@@ -3,43 +3,42 @@
 #
 # Total Lost Samples: 0
 #
-# Samples: 64K of event 'cycles:u'
-# Event count (approx.): 3010282040
+# Samples: 71K of event 'cycles:u'
+# Event count (approx.): 3241922147
 #
 # Overhead  Command  Shared Object        Symbol                                                                                                                                                                                                                                                                                                                                              
 # ........  .......  ...................  ....................................................................................................................................................................................................................................................................................................................................................
 #
-    71.64%  ccount   ccount               [.] bromine::file::get_char_count
-    20.16%  ccount   [unknown]            [k] 0xffffffffa260015f
-     6.52%  ccount   libpthread-2.29.so   [.] __libc_read
-     1.06%  ccount   ccount               [.] read@plt
-     0.13%  ccount   ccount               [.] main
-     0.07%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_insert_and_rebalance
-     0.06%  ccount   [unknown]            [k] 0xffffffffa2600b07
-     0.04%  ccount   libc-2.29.so         [.] _int_malloc
-     0.04%  ccount   libc-2.29.so         [.] malloc
-     0.04%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_copy<std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_Alloc_node>
+    72.42%  ccount   ccount               [.] bromine::file::get_char_count
+    19.09%  ccount   [unknown]            [k] 0xffffffffa260015f
+     6.60%  ccount   libpthread-2.29.so   [.] __libc_read
+     1.24%  ccount   ccount               [.] read@plt
+     0.12%  ccount   ccount               [.] main
+     0.08%  ccount   [unknown]            [k] 0xffffffffa2600b07
+     0.08%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_insert_and_rebalance
+     0.07%  ccount   libc-2.29.so         [.] malloc
+     0.07%  ccount   libc-2.29.so         [.] _int_malloc
+     0.04%  ccount   ld-2.29.so           [.] _dl_lookup_symbol_x
+     0.03%  ccount   ccount               [.] operator delete@plt
      0.03%  ccount   libstdc++.so.6.0.26  [.] std::local_Rb_tree_decrement
-     0.03%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_increment
-     0.03%  ccount   libc-2.29.so         [.] _int_free
-     0.02%  ccount   ld-2.29.so           [.] _dl_lookup_symbol_x
-     0.01%  ccount   libc-2.29.so         [.] cfree@GLIBC_2.2.5
+     0.02%  ccount   libc-2.29.so         [.] _int_free
+     0.02%  ccount   libstdc++.so.6.0.26  [.] operator new
+     0.02%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_get_insert_hint_unique_pos
      0.01%  ccount   ld-2.29.so           [.] do_lookup_x
-     0.01%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_get_insert_hint_unique_pos
-     0.01%  ccount   libstdc++.so.6.0.26  [.] operator new
-     0.01%  ccount   ld-2.29.so           [.] strcmp
-     0.01%  ccount   libstdc++.so.6.0.26  [.] std::locale::_Impl::_M_install_facet
+     0.01%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_erase
+     0.01%  ccount   libc-2.29.so         [.] _getopt_internal_r
+     0.01%  ccount   ccount               [.] std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_M_copy<std::_Rb_tree<char, std::pair<char const, int>, std::_Select1st<std::pair<char const, int> >, std::less<char>, std::allocator<std::pair<char const, int> > >::_Alloc_node>
      0.01%  ccount   ld-2.29.so           [.] _dl_relocate_object
-     0.01%  ccount   ld-2.29.so           [.] _dl_check_map_versions
-     0.00%  ccount   ccount               [.] operator new@plt
+     0.01%  ccount   ccount               [.] operator new@plt
+     0.01%  ccount   libpthread-2.29.so   [.] __libc_lseek64
      0.00%  ccount   ccount               [.] std::_Rb_tree_decrement@plt
-     0.00%  ccount   ld-2.29.so           [.] _dl_map_object
+     0.00%  ccount   ld-2.29.so           [.] _dl_cache_libcmp
+     0.00%  ccount   ld-2.29.so           [.] __GI___tunables_init
      0.00%  ccount   libstdc++.so.6.0.26  [.] std::_Rb_tree_decrement
      0.00%  ccount   ccount               [.] std::_Rb_tree_insert_and_rebalance@plt
-     0.00%  ccount   libstdc++.so.6.0.26  [.] operator delete
-     0.00%  ccount   ld-2.29.so           [.] __GI___tunables_init
+     0.00%  ccount   ld-2.29.so           [.] _dl_start
 
 
 #
-# (Tip: For memory address profiling, try: perf mem record / perf mem report)
+# (Tip: To count events in every 1000 msec: perf stat -I 1000)
 #
