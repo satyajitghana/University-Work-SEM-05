@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build",
+  "command": "/usr/bin/gcc-9   -g   -std=gnu99 -o CMakeFiles/gst-c.dir/main.c.o   -c /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/main.c",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/main.c"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build",
+  "command": "/usr/bin/gcc-9   -g   -std=gnu99 -o CMakeFiles/gst-c.dir/array_list.c.o   -c /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.c",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.c"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build",
+  "command": "/usr/bin/gcc-9   -g   -std=gnu99 -o CMakeFiles/gst-c.dir/gst_item.c.o   -c /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.c",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.c"
+}
+]
