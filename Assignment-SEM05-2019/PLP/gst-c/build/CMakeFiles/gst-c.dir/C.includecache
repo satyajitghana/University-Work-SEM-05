@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.c
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.c
 array_list.h
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.h
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.h
 stdio.h
 -
 stdlib.h
 -
 
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.h
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.h
 
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.c
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.c
 gst_item.h
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.h
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.h
 assert.h
 -
 stdio.h
@@ -26,13 +26,13 @@ stdio.h
 stdlib.h
 -
 
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.h
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.h
 
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/main.c
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/main.c
 stdio.h
 -
 array_list.h
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.h
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.h
 gst_item.h
-/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.h
+/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.h
 

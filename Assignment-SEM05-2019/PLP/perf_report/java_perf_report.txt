@@ -1,0 +1,757 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cycles:u'
+# Event count (approx.): 351878146
+#
+# Overhead  Command          Shared Object       Symbol                                 
+# ........  ...............  ..................  .......................................
+#
+     2.14%  java             libjvm.so           [.] 0x0000000000d14785
+     1.14%  java             libjvm.so           [.] 0x0000000000d147b1
+     0.82%  java             [unknown]           [k] 0xffffffff8a800b07
+     0.78%  java             libjvm.so           [.] 0x0000000000b7a168
+     0.63%  java             libjvm.so           [.] 0x0000000000b7a5fb
+     0.63%  java             libjvm.so           [.] 0x0000000000d147ae
+     0.54%  C1 CompilerThre  ld-2.29.so          [.] __tls_get_addr
+     0.52%  java             libjvm.so           [.] 0x0000000000d147b7
+     0.52%  java             [JIT] tid 1347      [.] 0x00007f9ab89654c4
+     0.47%  java             libjvm.so           [.] 0x0000000000d14b69
+     0.44%  java             libc-2.29.so        [.] __vfprintf_internal
+     0.43%  java             ld-2.29.so          [.] do_lookup_x
+     0.43%  java             [JIT] tid 1347      [.] 0x00007f9ab8957096
+     0.39%  java             libjimage.so        [.] 0x0000000000002d15
+     0.39%  java             [JIT] tid 1347      [.] 0x00007f9ab89780fb
+     0.39%  java             libjvm.so           [.] 0x0000000000c6a4e0
+     0.38%  java             [JIT] tid 1347      [.] 0x00007f9ab89654c0
+     0.38%  java             [JIT] tid 1347      [.] 0x00007f9ab8974702
+     0.38%  java             libjvm.so           [.] 0x0000000000bb074a
+     0.38%  java             libjvm.so           [.] 0x00000000008246cc
+     0.38%  java             [JIT] tid 1347      [.] 0x00007f9ab8965516
+     0.37%  java             libjimage.so        [.] 0x0000000000003a1f
+     0.37%  java             ld-2.29.so          [.] _dl_relocate_object
+     0.37%  java             libjvm.so           [.] 0x00000000008246c7
+     0.36%  C1 CompilerThre  libc-2.29.so        [.] __vfscanf_internal
+     0.36%  java             [JIT] tid 1347      [.] 0x00007f9ab896bd88
+     0.35%  java             libc-2.29.so        [.] _int_malloc
+     0.30%  C1 CompilerThre  libc-2.29.so        [.] __memmove_avx_unaligned_erms
+     0.29%  java             ld-2.29.so          [.] strcmp
+     0.27%  C1 CompilerThre  [JIT] tid 1347      [.] 0x00007f9ab8957096
+     0.27%  java             [JIT] tid 1347      [.] 0x00007f9ab8969568
+     0.26%  C1 CompilerThre  libc-2.29.so        [.] cfree@GLIBC_2.2.5
+     0.26%  java             [JIT] tid 1347      [.] 0x00007f9ab89656f8
+     0.26%  C1 CompilerThre  libjvm.so           [.] 0x000000000052de2a
+     0.26%  java             libc-2.29.so        [.] __vsnprintf_internal
+     0.26%  java             libjvm.so           [.] 0x00000000005a88c2
+     0.26%  java             libjvm.so           [.] 0x0000000000d14b47
+     0.26%  java             [JIT] tid 1347      [.] 0x00007f9ab8965537
+     0.26%  java             libjvm.so           [.] 0x0000000000c6a526
+     0.26%  java             [vdso]              [.] 0x0000000000000983
+     0.25%  java             libjvm.so           [.] 0x0000000000d14b52
+     0.25%  java             libjvm.so           [.] 0x0000000000cbb8b5
+     0.25%  java             libjvm.so           [.] 0x0000000000d14791
+     0.25%  java             libjvm.so           [.] 0x00000000005a8d53
+     0.25%  java             [JIT] tid 1347      [.] 0x00007f9ab8f047f7
+     0.25%  java             [JIT] tid 1347      [.] 0x00007f9ab8974441
+     0.25%  java             [JIT] tid 1347      [.] 0x00007f9ab89787e7
+     0.24%  java             libjvm.so           [.] 0x0000000000d147b3
+     0.24%  java             libjvm.so           [.] 0x0000000000b7a5e0
+     0.24%  java             libjvm.so           [.] 0x0000000000b79ba7
+     0.24%  java             [JIT] tid 1347      [.] 0x00007f9ab8974558
+     0.24%  C1 CompilerThre  libjvm.so           [.] 0x000000000053aca3
+     0.24%  java             libjvm.so           [.] 0x0000000000d12623
+     0.24%  java             libjvm.so           [.] 0x0000000000d147d1
+     0.24%  java             [JIT] tid 1347      [.] 0x00007f9ab8978594
+     0.24%  java             libjvm.so           [.] 0x0000000000b7a60f
+     0.24%  C2 CompilerThre  libc-2.29.so        [.] __memset_avx2_unaligned_erms
+     0.23%  java             [JIT] tid 1347      [.] 0x00007f9ab89b0b17
+     0.23%  java             [JIT] tid 1347      [.] 0x00007f9ab8975e82
+     0.23%  java             [JIT] tid 1347      [.] 0x00007f9ab896b235
+     0.23%  java             [JIT] tid 1347      [.] 0x00007f9ab896f785
+     0.23%  java             libjvm.so           [.] 0x0000000000c9f1e9
+     0.23%  java             [JIT] tid 1347      [.] 0x00007f9ab8960c84
+     0.23%  java             libjvm.so           [.] 0x0000000000c6ada0
+     0.23%  C1 CompilerThre  libpthread-2.29.so  [.] __pthread_mutex_unlock_usercnt
+     0.20%  java             ld-2.29.so          [.] _dl_lookup_symbol_x
+     0.18%  C1 CompilerThre  libjvm.so           [.] 0x0000000000bcc020
+     0.18%  C1 CompilerThre  libjvm.so           [.] 0x00000000004d7140
+     0.18%  java             [JIT] tid 1347      [.] 0x00007f9ab8f04160
+     0.18%  java             libc-2.29.so        [.] __memmove_avx_unaligned_erms
+     0.18%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b652d0
+     0.17%  C1 CompilerThre  libjvm.so           [.] 0x0000000000bb06f0
+     0.17%  C1 CompilerThre  libjvm.so           [.] 0x00000000004a4af2
+     0.17%  C1 CompilerThre  libjvm.so           [.] 0x00000000008f7e50
+     0.16%  C1 CompilerThre  libjvm.so           [.] 0x0000000000513110
+     0.16%  C1 CompilerThre  libjvm.so           [.] 0x000000000051a2ae
+     0.16%  C1 CompilerThre  libjvm.so           [.] 0x0000000000514d54
+     0.16%  C1 CompilerThre  libjvm.so           [.] 0x0000000000593181
+     0.15%  C1 CompilerThre  libjvm.so           [.] 0x0000000000568a78
+     0.15%  C1 CompilerThre  libjvm.so           [.] 0x0000000000518e7a
+     0.14%  java             [JIT] tid 1347      [.] 0x00007f9ab8f045d7
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x0000000000d68545
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b67198
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b834a1
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x0000000000ca04d2
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x00000000004a298a
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b5a6d8
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b8e280
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x000000000055c54f
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a452e5
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b10250
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a7a039
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x00000000002e3eb0
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a85aa3
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000729110
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x00000000004246b1
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x000000000055e2a1
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000573ec3
+     0.14%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c1b5f0
+     0.14%  C1 CompilerThre  libjvm.so           [.] 0x00000000004f8b91
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000052ce7c
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c6001a
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b905a3
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b65b0b
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c033a6
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8965771
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000c08af0
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a7b9a1
+     0.13%  java             libjimage.so        [.] 0x0000000000003764
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000058cdb0
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000ca03cc
+     0.13%  java             libjvm.so           [.] 0x00000000008246bf
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000819fde
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000822cba
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896b8c9
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8969ce1
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89694f5
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896553b
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000050dd58
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8ef6505
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8970061
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8974d32
+     0.13%  java             libjvm.so           [.] 0x00000000008459a0
+     0.13%  java             libc-2.29.so        [.] __strlen_avx2
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896552f
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000817ef1
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c68af5
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x00000000003e1fa0
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x00000000006f3260
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000dc1f0f
+     0.13%  java             libjvm.so           [.] 0x00000000007eba10
+     0.13%  java             libc-2.29.so        [.] __memchr_avx2
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c1bfba
+     0.13%  java             libjvm.so           [.] 0x0000000000d8e737
+     0.13%  java             libjvm.so           [.] 0x0000000000825d40
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8eed85c
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8966520
+     0.13%  java             libjvm.so           [.] 0x0000000000483b10
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89786ae
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8965533
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000055f7ab
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b1025b
+     0.13%  java             libjvm.so           [.] 0x0000000000682cb0
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89654cc
+     0.13%  java             libjvm.so           [.] 0x00000000005b0643
+     0.13%  java             libjvm.so           [.] 0x00000000007f6aae
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000081a6a2
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896576a
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c5f670
+     0.13%  java             libjvm.so           [.] 0x0000000000d15ded
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89764f6
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89771aa
+     0.13%  java             libjvm.so           [.] 0x0000000000cbfd82
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8960a65
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000d569dc
+     0.13%  java             libjvm.so           [.] 0x00000000005b0b66
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896f4f3
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8a4979e
+     0.13%  java             libjimage.so        [.] 0x0000000000002cf0
+     0.13%  java             libjvm.so           [.] 0x0000000000b94158
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c2d26
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8970a4a
+     0.13%  java             libjvm.so           [.] 0x00000000008555f7
+     0.13%  java             libjvm.so           [.] 0x00000000004047f7
+     0.13%  java             libjvm.so           [.] 0x00000000005a7408
+     0.13%  java             libjvm.so           [.] 0x0000000000ba6ef2
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89744a2
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8f049dd
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a540
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89656ef
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896933e
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b12aa4
+     0.13%  java             libjvm.so           [.] 0x0000000000c9f69a
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8972b21
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a6c0
+     0.13%  java             libjvm.so           [.] 0x00000000008dafea
+     0.13%  java             libjvm.so           [.] 0x000000000082bf1f
+     0.13%  java             libjvm.so           [.] 0x00000000007f57d9
+     0.13%  java             libjvm.so           [.] 0x0000000000d4e6a0
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004b88c0
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c1db69
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000512b48
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000081763f
+     0.13%  java             libjvm.so           [.] 0x0000000000c68ae4
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8977cd8
+     0.13%  java             libjvm.so           [.] 0x0000000000c89e7a
+     0.13%  java             libjvm.so           [.] 0x00000000007f086b
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x00000000005c6230
+     0.13%  java             libjvm.so           [.] 0x000000000066dda9
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a6bb
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8967e53
+     0.13%  java             libjvm.so           [.] 0x00000000005a8ac9
+     0.13%  java             libjvm.so           [.] 0x0000000000a4302c
+     0.13%  java             libjvm.so           [.] 0x000000000084bb2f
+     0.13%  java             libjvm.so           [.] 0x00000000008537e7
+     0.13%  java             libjvm.so           [.] 0x00000000005a028d
+     0.13%  java             libjvm.so           [.] 0x0000000000d247e0
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a520
+     0.13%  java             libjvm.so           [.] 0x0000000000b79e94
+     0.13%  java             libjvm.so           [.] 0x0000000000ca3ca9
+     0.13%  java             libjvm.so           [.] 0x0000000000404bcb
+     0.13%  java             libjvm.so           [.] 0x0000000000b18de8
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8975e33
+     0.13%  java             libjvm.so           [.] 0x00000000005a0250
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b13040
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab897860e
+     0.13%  java             libjvm.so           [.] 0x000000000067afa1
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89690e7
+     0.13%  java             libjvm.so           [.] 0x00000000007eb910
+     0.13%  java             libjvm.so           [.] 0x00000000005b842c
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8971878
+     0.13%  java             libjvm.so           [.] 0x0000000000856288
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab897387b
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89668be
+     0.13%  java             libjvm.so           [.] 0x00000000007eb5ed
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8975642
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000066a8ea
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8f0469a
+     0.13%  java             libjvm.so           [.] 0x0000000000a3fc25
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8969ce0
+     0.13%  java             libjvm.so           [.] 0x0000000000c89cfb
+     0.13%  java             libjvm.so           [.] 0x0000000000ca415c
+     0.13%  java             libjvm.so           [.] 0x000000000082c3fe
+     0.13%  java             libjvm.so           [.] 0x0000000000bb8c7b
+     0.13%  java             libjvm.so           [.] 0x000000000084d098
+     0.13%  java             libjvm.so           [.] 0x0000000000c9f696
+     0.13%  java             libjvm.so           [.] 0x0000000000d8e74e
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c4f40
+     0.13%  java             libjvm.so           [.] 0x000000000082bf22
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89786d2
+     0.13%  java             libjvm.so           [.] 0x0000000000a43aaf
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c6c26
+     0.13%  java             libjvm.so           [.] 0x0000000000424cb1
+     0.13%  java             libjvm.so           [.] 0x0000000000b7986b
+     0.13%  java             libjvm.so           [.] 0x00000000005a7e4f
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000081a313
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89786b9
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8977ceb
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8978660
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c17c79
+     0.13%  java             libjvm.so           [.] 0x0000000000a45c42
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab897376b
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c5b676
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab895708b
+     0.13%  java             libjvm.so           [.] 0x000000000067c5e8
+     0.13%  java             libjvm.so           [.] 0x0000000000d147a0
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896aa40
+     0.13%  java             libjvm.so           [.] 0x0000000000c898f2
+     0.13%  java             libjvm.so           [.] 0x0000000000c69c0d
+     0.13%  java             libjvm.so           [.] 0x0000000000b3803e
+     0.13%  java             libjvm.so           [.] 0x000000000084b96b
+     0.13%  java             libjvm.so           [.] 0x0000000000666588
+     0.13%  java             libjvm.so           [.] 0x0000000000b6b768
+     0.13%  java             libjvm.so           [.] 0x0000000000b7f41f
+     0.13%  java             libjvm.so           [.] 0x000000000042ca34
+     0.13%  java             libjvm.so           [.] 0x0000000000b4a4c0
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x00000000007bcfa4
+     0.13%  java             libjvm.so           [.] 0x00000000006681cc
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ac041f4fb
+     0.13%  java             libjvm.so           [.] 0x0000000000c89a7a
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x00000000002e30b0
+     0.13%  java             libjvm.so           [.] 0x0000000000a12523
+     0.13%  java             libjvm.so           [.] 0x00000000005a0287
+     0.13%  C1 CompilerThre  libc-2.29.so        [.] __GI___sysinfo
+     0.13%  java             libjvm.so           [.] 0x0000000000660c6e
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8f0474a
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000554969
+     0.13%  java             libjvm.so           [.] 0x0000000000a11c84
+     0.13%  java             libjvm.so           [.] 0x0000000000d247ff
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab897857f
+     0.13%  java             libjvm.so           [.] 0x00000000007eb543
+     0.13%  java             libjvm.so           [.] 0x0000000000af9520
+     0.13%  java             libjvm.so           [.] 0x00000000004447d9
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000a3e9ab
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a494
+     0.13%  java             libjvm.so           [.] 0x000000000082c3f0
+     0.13%  java             libjvm.so           [.] 0x0000000000d219b6
+     0.13%  java             libjvm.so           [.] JVM_Clone
+     0.13%  C2 CompilerThre  [vdso]              [.] __vdso_clock_gettime
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896574e
+     0.13%  java             libjvm.so           [.] 0x0000000000d147c8
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004bc2f0
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a83ac2
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000006720e8
+     0.13%  java             libjvm.so           [.] 0x0000000000c9f0ac
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a7aa9c
+     0.13%  java             libjvm.so           [.] 0x00000000005a1c2f
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8eef9a1
+     0.13%  java             libjvm.so           [.] 0x00000000005d428a
+     0.13%  java             libjvm.so           [.] 0x00000000005ad8b1
+     0.13%  java             libjvm.so           [.] 0x00000000005abdf8
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000053a176
+     0.13%  java             libjvm.so           [.] 0x0000000000ba5b90
+     0.13%  java             libjvm.so           [.] 0x00000000005d6c42
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x00000000005c6395
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000050fb0d
+     0.13%  java             libjvm.so           [.] 0x0000000000c694fc
+     0.13%  java             libjvm.so           [.] 0x000000000071ee85
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a6b060
+     0.13%  java             libjvm.so           [.] 0x0000000000c9f735
+     0.13%  java             libjvm.so           [.] 0x0000000000c9fca4
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b8b9c2
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004ac8d8
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000050efaa
+     0.13%  java             libjvm.so           [.] 0x00000000006f4594
+     0.13%  java             libjvm.so           [.] 0x0000000000ca05b0
+     0.13%  java             libjvm.so           [.] 0x0000000000c68afc
+     0.13%  java             libjvm.so           [.] 0x0000000000a0d251
+     0.13%  java             libjvm.so           [.] 0x0000000000b520c0
+     0.13%  java             libjvm.so           [.] 0x00000000005a029a
+     0.13%  java             libjvm.so           [.] 0x0000000000cbfcd8
+     0.13%  java             libjvm.so           [.] 0x0000000000d66155
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000822c70
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000050da64
+     0.13%  java             libjvm.so           [.] JVM_IHashCode
+     0.13%  java             libjimage.so        [.] 0x0000000000002d50
+     0.13%  java             libjvm.so           [.] 0x0000000000d14b4a
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c6003f
+     0.13%  java             libjvm.so           [.] 0x0000000000a45bdd
+     0.13%  java             libjvm.so           [.] 0x00000000005a5ef7
+     0.13%  java             libjvm.so           [.] 0x00000000005b0c51
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c5fb82
+     0.13%  java             libjvm.so           [.] 0x0000000000427a5e
+     0.13%  java             libjvm.so           [.] 0x0000000000ca127f
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a6c5
+     0.13%  java             libjvm.so           [.] 0x0000000000d147ee
+     0.13%  java             libjvm.so           [.] 0x0000000000d19afb
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b83b3a
+     0.13%  java             libjvm.so           [.] 0x0000000000c9fc90
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000510093
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8960c9c
+     0.13%  java             libjvm.so           [.] 0x000000000061d150
+     0.13%  java             libjvm.so           [.] 0x0000000000c631f5
+     0.13%  java             libjvm.so           [.] 0x0000000000caaf70
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a4fb
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000a0ca30
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b2c080
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896af2e
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004b46f0
+     0.13%  java             libjvm.so           [.] 0x0000000000ca2f03
+     0.13%  java             libjvm.so           [.] 0x0000000000c6a730
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000050efe1
+     0.13%  java             libjvm.so           [.] 0x00000000005a8b92
+     0.13%  java             libjvm.so           [.] 0x00000000005d6c10
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab89745be
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab897496f
+     0.13%  java             libjvm.so           [.] 0x00000000005adb6e
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8974fb0
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000672065
+     0.13%  java             libjvm.so           [.] 0x0000000000c9f684
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896cd69
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8979285
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8976209
+     0.13%  java             libjvm.so           [.] 0x00000000006f4630
+     0.13%  java             libjvm.so           [.] 0x000000000082c41b
+     0.13%  java             libjvm.so           [.] 0x0000000000c9fdb8
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c6900
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c5f672
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004bebe9
+     0.13%  java             libjvm.so           [.] 0x000000000066e0d8
+     0.13%  java             libjvm.so           [.] 0x0000000000a0ca50
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x000000000050bf48
+     0.13%  java             libpthread-2.29.so  [.] pthread_attr_init@@GLIBC_2.2.5
+     0.13%  java             libjvm.so           [.] 0x00000000008506cf
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000005162f8
+     0.13%  java             libjvm.so           [.] 0x0000000000b4f0fd
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab896955f
+     0.13%  java             libjvm.so           [.] 0x0000000000c9fdcc
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004e9594
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b8bb26
+     0.13%  java             libc-2.29.so        [.] read_int
+     0.13%  java             libjvm.so           [.] 0x0000000000a45c45
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000515925
+     0.13%  java             libpthread-2.29.so  [.] __pthread_mutex_init
+     0.13%  java             libjvm.so           [.] 0x00000000005b637c
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004a54fc
+     0.13%  java             libjvm.so           [.] 0x00000000005b21b9
+     0.13%  java             libjvm.so           [.] 0x00000000007251e0
+     0.13%  java             libjvm.so           [.] 0x00000000007eba91
+     0.13%  java             libjvm.so           [.] 0x0000000000d2260a
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004a2625
+     0.13%  java             libpthread-2.29.so  [.] __pthread_mutex_lock
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c5fbbd
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8965763
+     0.13%  java             libjvm.so           [.] 0x00000000005aae7e
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c054b
+     0.13%  java             libjvm.so           [.] 0x00000000007eb9ba
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8977ec1
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x000000000035737e
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8960410
+     0.13%  java             [JIT] tid 1347      [.] 0x00007f9ab8969cb5
+     0.13%  C2 CompilerThre  libjvm.so           [.] 0x0000000000d68603
+     0.13%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b65f9c
+     0.13%  java             libjvm.so           [.] 0x00000000005ac360
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004dd645
+     0.12%  java             libjvm.so           [.] 0x0000000000a3e9a5
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8974a5b
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8975fe7
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000040cec4
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000c68afc
+     0.12%  java             libjvm.so           [.] 0x0000000000725e80
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000045ec20
+     0.12%  java             libjvm.so           [.] 0x0000000000a0d437
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000005180f8
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab89b0b0b
+     0.12%  java             libjvm.so           [.] 0x00000000002c2a77
+     0.12%  java             libjvm.so           [.] 0x00000000008268b1
+     0.12%  C1 CompilerThre  [JIT] tid 1347      [.] 0x00007f9ab8957080
+     0.12%  java             libjvm.so           [.] 0x0000000000d1ef13
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004a28de
+     0.12%  java             libjvm.so           [.] 0x00000000006627a7
+     0.12%  java             ld-2.29.so          [.] __tls_get_addr
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f680
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8965d4d
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8975240
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8f03652
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8f04812
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000005198fd
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f193
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000007eae10
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x00000000007bf723
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b0e0fb
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004cedfc
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000473298
+     0.12%  C1 CompilerThre  libc-2.29.so        [.] __strchrnul_avx2
+     0.12%  java             libjvm.so           [.] 0x0000000000a12859
+     0.12%  java             libjvm.so           [.] 0x00000000005ac50d
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b79ba0
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a6afae
+     0.12%  java             libjvm.so           [.] 0x00000000005a158d
+     0.12%  java             libjvm.so           [.] 0x00000000005affb0
+     0.12%  java             libjvm.so           [.] 0x0000000000c8a66d
+     0.12%  java             libjvm.so           [.] 0x000000000049d66e
+     0.12%  java             libjvm.so           [.] 0x0000000000a11a53
+     0.12%  java             libjvm.so           [.] 0x00000000005b0658
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000050e41a
+     0.12%  java             libjvm.so           [.] 0x0000000000dc1f53
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000007c9ff3
+     0.12%  java             libjvm.so           [.] 0x0000000000a11ca8
+     0.12%  java             libjvm.so           [.] 0x0000000000ca59d7
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8ef1e4f
+     0.12%  java             libjvm.so           [.] 0x0000000000663653
+     0.12%  java             libjvm.so           [.] 0x00000000007eb562
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000517c57
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x000000000060b50b
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000817ed9
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8f047dc
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c0468
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000053b294
+     0.12%  java             libjvm.so           [.] 0x0000000000b4c630
+     0.12%  java             libjvm.so           [.] 0x0000000000c6a4f7
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000005195e0
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000051bfb5
+     0.12%  java             libjvm.so           [.] 0x0000000000b520f8
+     0.12%  java             libjvm.so           [.] 0x0000000000d15dc2
+     0.12%  java             libjvm.so           [.] 0x0000000000c68af5
+     0.12%  java             libjvm.so           [.] 0x0000000000d15d9a
+     0.12%  java             libjvm.so           [.] 0x00000000005b857f
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004e9534
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x000000000055ca4c
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f1f0
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab896043a
+     0.12%  java             libjvm.so           [.] 0x00000000005d4480
+     0.12%  java             libjvm.so           [.] 0x00000000005aba6c
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8970a81
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000d684a4
+     0.12%  java             libjvm.so           [.] 0x0000000000483b6d
+     0.12%  java             libjvm.so           [.] 0x0000000000d14b40
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000050ffc3
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000050f234
+     0.12%  java             libjvm.so           [.] 0x00000000005abddd
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8970a4d
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000514f5a
+     0.12%  java             libjvm.so           [.] 0x0000000000660b8b
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab896bd94
+     0.12%  java             libjvm.so           [.] 0x0000000000c6955e
+     0.12%  java             libc-2.29.so        [.] __strrchr_avx2
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b75930
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a7aa20
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000457460
+     0.12%  java             libjvm.so           [.] 0x00000000005a12eb
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f850
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8974938
+     0.12%  java             libjvm.so           [.] 0x0000000000a3dc2b
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x00000000003dc160
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000bd4d56
+     0.12%  java             libjvm.so           [.] 0x00000000002c29ac
+     0.12%  java             libjvm.so           [.] 0x0000000000b4bb6b
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c1768
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f230
+     0.12%  C2 CompilerThre  libpthread-2.29.so  [.] __pthread_mutex_unlock_usercnt
+     0.12%  java             libjvm.so           [.] 0x00000000005b4130
+     0.12%  java             libjvm.so           [.] 0x0000000000d14b43
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000669e20
+     0.12%  java             libjvm.so           [.] 0x0000000000dc1eb0
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000051503e
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c16219
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a149bd
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c1e24d
+     0.12%  java             libjvm.so           [.] 0x00000000005a1770
+     0.12%  java             libjvm.so           [.] 0x0000000000b7a51d
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c6b8d
+     0.12%  java             libjvm.so           [.] 0x00000000006627ac
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab897377e
+     0.12%  java             libjvm.so           [.] 0x0000000000bab4f7
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c557e
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8975fbb
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab897e717
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004adc70
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8970960
+     0.12%  java             libjvm.so           [.] 0x00000000005a5658
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b8fb01
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8973772
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f095
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8f025e8
+     0.12%  java             libjvm.so           [.] 0x0000000000dc1f48
+     0.12%  java             libjvm.so           [.] 0x0000000000c9f7c8
+     0.12%  java             libjvm.so           [.] 0x0000000000bd6e80
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000005d57e2
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a83968
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8975e2d
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8f047cb
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000548190
+     0.12%  java             libjvm.so           [.] 0x00000000008268cc
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c166ae
+     0.12%  java             libjvm.so           [.] 0x0000000000a11a74
+     0.12%  java             libjvm.so           [.] 0x0000000000d15e40
+     0.12%  java             libjvm.so           [.] 0x00000000005d8858
+     0.12%  java             libjvm.so           [.] 0x00000000007f09b5
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000049f7ae
+     0.12%  java             libjvm.so           [.] 0x0000000000c68b9d
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004b5d38
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000053a599
+     0.12%  java             libjvm.so           [.] 0x0000000000d218de
+     0.12%  java             libjvm.so           [.] 0x0000000000a114f4
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x000000000081ab73
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004e9300
+     0.12%  java             libjvm.so           [.] 0x00000000006f45a1
+     0.12%  java             libjvm.so           [.] 0x0000000000dc1f5b
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8f04968
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000050d7be
+     0.12%  C2 CompilerThre  libc-2.29.so        [.] sysmalloc
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab89681cc
+     0.12%  java             libjvm.so           [.] 0x0000000000564880
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab896a291
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000404ad1
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab897388d
+     0.12%  java             libjvm.so           [.] 0x0000000000b3bc84
+     0.12%  java             libjvm.so           [.] 0x0000000000c6a6ad
+     0.12%  java             libjvm.so           [.] 0x000000000082bde1
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000579e29
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x0000000000d147b1
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004963d0
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8973839
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x00000000004d10db
+     0.12%  java             libjvm.so           [.] 0x0000000000c68ac1
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000053a716
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x000000000059a3bc
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x00000000005c6ff0
+     0.12%  C2 CompilerThre  libjvm.so           [.] 0x00000000007ba78d
+     0.12%  java             [JIT] tid 1347      [.] 0x00007f9ab8973846
+     0.12%  C1 CompilerThre  libjvm.so           [.] 0x000000000051c070
+     0.12%  java             libjvm.so           [.] 0x0000000000b7a4b1
+     0.12%  java             libjvm.so           [.] 0x00000000005a134d
+     0.11%  java             libjvm.so           [.] 0x0000000000c69557
+     0.11%  C1 CompilerThre  libc-2.29.so        [.] __memset_avx2_unaligned_erms
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x00000000006f2b2d
+     0.11%  java             libjvm.so           [.] 0x0000000000d159ff
+     0.11%  java             libjvm.so           [.] 0x00000000005ad04f
+     0.11%  java             libjvm.so           [.] 0x0000000000d12628
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000517ce9
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x0000000000d687e9
+     0.11%  java             libjvm.so           [.] 0x000000000085253e
+     0.11%  java             [JIT] tid 1347      [.] 0x00007f9ab896042d
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x00000000007c86f5
+     0.11%  java             [JIT] tid 1347      [.] 0x00007f9ab896b21e
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x00000000004f3403
+     0.11%  java             libc-2.29.so        [.] tzset_internal
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b34334
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000671d59
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x00000000008f8375
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x0000000000706ec3
+     0.11%  java             libjvm.so           [.] 0x00000000005ac435
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x00000000006a6b50
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b56292
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x00000000005393c6
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a44ec7
+     0.11%  java             [JIT] tid 1347      [.] 0x00007f9ab896c58c
+     0.11%  C1 CompilerThre  libc-2.29.so        [.] _IO_no_init
+     0.11%  java             libjvm.so           [.] 0x00000000006313c6
+     0.11%  java             libjvm.so           [.] 0x000000000082bf5d
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000472460
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000513b2f
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000453b79
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x000000000051727b
+     0.11%  java             libjvm.so           [.] 0x0000000000454369
+     0.11%  java             libjvm.so           [.] 0x000000000040cec0
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x00000000002c5d3f
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x000000000049c6b0
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c289c
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x000000000035a730
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b4c960
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x000000000050f040
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000c68af2
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x00000000008246c7
+     0.11%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b8c883
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x000000000050bfa1
+     0.11%  C1 CompilerThre  libpthread-2.29.so  [.] __pthread_mutex_lock
+     0.11%  java             libjvm.so           [.] 0x00000000005ad379
+     0.11%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b67570
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x00000000003e37d3
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x00000000004543c0
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x000000000053afe0
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x0000000000d5e1ff
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c1270
+     0.10%  java             libjvm.so           [.] 0x0000000000452453
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x000000000053884b
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x000000000058e860
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x00000000006634d2
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c19104
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c18aa0
+     0.10%  java             libjvm.so           [.] 0x0000000000404780
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c71d0
+     0.10%  C1 CompilerThre  libc-2.29.so        [.] __vfprintf_internal
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c5f684
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x000000000050bff4
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x0000000000c68b2c
+     0.10%  java             libjvm.so           [.] 0x00000000008402af
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x000000000051bdba
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x000000000049f7e4
+     0.10%  java             ld-2.29.so          [.] check_match
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c15710
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x00000000006f31df
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x00000000004e91b5
+     0.10%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b0e0c5
+     0.10%  C1 CompilerThre  libjvm.so           [.] 0x00000000004c6170
+     0.09%  C1 CompilerThre  libjvm.so           [.] 0x0000000000c68af5
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x0000000000a78b4a
+     0.09%  java             libjvm.so           [.] 0x000000000027355c
+     0.09%  C1 CompilerThre  libjvm.so           [.] 0x0000000000b7a60f
+     0.09%  java             libjvm.so           [.] 0x000000000043d126
+     0.09%  C1 CompilerThre  libjvm.so           [.] 0x000000000053a114
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x00000000007bc707
+     0.09%  java             libjvm.so           [.] 0x0000000000e27080
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x0000000000605638
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b0f4c9
+     0.09%  C1 CompilerThre  libjvm.so           [.] 0x000000000058cb30
+     0.09%  java             libjvm.so           [.] 0x0000000000d3ddff
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x000000000055f940
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x0000000000572f0d
+     0.09%  C2 CompilerThre  libjvm.so           [.] 0x00000000006f3191
+     0.08%  C1 CompilerThre  libjvm.so           [.] 0x00000000004bf8e2
+     0.08%  C2 CompilerThre  libjvm.so           [.] 0x00000000003fc0f1
+     0.08%  java             libpthread-2.29.so  [.] pthread_cond_wait@@GLIBC_2.3.2
+     0.08%  java             libjvm.so           [.] 0x0000000000424fbc
+     0.07%  C1 CompilerThre  libjvm.so           [.] 0x000000000067257c
+     0.07%  java             libjvm.so           [.] 0x000000000077fb40
+     0.07%  java             ld-2.29.so          [.] _dl_sort_maps
+     0.07%  VM Thread        libjvm.so           [.] 0x0000000000d62354
+     0.07%  java             libc-2.29.so        [.] __strcmp_avx2
+     0.07%  C2 CompilerThre  libjvm.so           [.] 0x00000000006f3251
+     0.07%  java             libjvm.so           [.] 0x00000000004276fa
+     0.07%  C1 CompilerThre  libjvm.so           [.] 0x00000000004f92d5
+     0.07%  C1 CompilerThre  libjvm.so           [.] 0x000000000044b179
+     0.07%  C1 CompilerThre  libjvm.so           [.] 0x0000000000dc1ece
+     0.06%  java             libjvm.so           [.] 0x00000000005d368e
+     0.06%  VM Thread        libjvm.so           [.] 0x0000000000a43e60
+     0.06%  java             libjvm.so           [.] 0x0000000000bc79d7
+     0.06%  C1 CompilerThre  libjvm.so           [.] 0x000000000052db95
+     0.06%  Finalizer        [JIT] tid 1347      [.] 0x00007f9ab896823f
+     0.06%  C1 CompilerThre  libjvm.so           [.] 0x000000000042430f
+     0.06%  G1 Young RemSet  libpthread-2.29.so  [.] __condvar_dec_grefs
+     0.06%  java             libc-2.29.so        [.] _IO_str_init_static_internal
+     0.06%  java             [JIT] tid 1347      [.] 0x00007f9ab895751d
+     0.06%  java             libjvm.so           [.] 0x0000000000cbca84
+     0.06%  java             libjvm.so           [.] 0x000000000040479c
+     0.06%  java             ld-2.29.so          [.] dl_open_worker
+     0.06%  java             libjvm.so           [.] 0x0000000000451413
+     0.05%  java             libjvm.so           [.] 0x0000000000424cd4
+     0.05%  C2 CompilerThre  libjvm.so           [.] 0x0000000000c02f62
+     0.05%  Finalizer        libjvm.so           [.] 0x0000000000c6a4f7
+     0.05%  Reference Handl  ld-2.29.so          [.] do_lookup_x
+     0.05%  Finalizer        libjvm.so           [.] 0x0000000000d15d18
+     0.05%  Sweeper thread   libjvm.so           [.] 0x0000000000b79ba7
+     0.05%  Sweeper thread   libjvm.so           [.] 0x0000000000d56a96
+     0.05%  Sweeper thread   libpthread-2.29.so  [.] __pthread_mutex_cond_lock
+     0.05%  C2 CompilerThre  libc-2.29.so        [.] __strncpy_avx2
+     0.05%  java             libc-2.29.so        [.] _dl_addr
+     0.04%  C2 CompilerThre  libjvm.so           [.] 0x0000000000d147ae
+     0.04%  Sweeper thread   libjvm.so           [.] 0x0000000000d569dc
+     0.04%  java             ld-2.29.so          [.] _dl_cache_libcmp
+     0.04%  java             libc-2.29.so        [.] __GI___prctl
+     0.04%  java             libc-2.29.so        [.] malloc
+     0.04%  G1 Main Marker   [vdso]              [.] __vdso_clock_gettime
+     0.04%  GC Thread#0      libjvm.so           [.] 0x0000000000631f02
+     0.04%  java             libpthread-2.29.so  [.] pthread_sigmask
+     0.03%  java             libjvm.so           [.] 0x0000000000d4fb72
+     0.03%  java             ld-2.29.so          [.] __tls_get_addr_slow
+     0.03%  java             libc-2.29.so        [.] arena_get2.part.0
+     0.03%  java             libjvm.so           [.] 0x0000000000bc0b7a
+     0.03%  C1 CompilerThre  libc-2.29.so        [.] _IO_str_init_static_internal
+     0.02%  G1 Young RemSet  libc-2.29.so        [.] __res_thread_freeres
+     0.02%  java             ld-2.29.so          [.] __GI___tunables_init
+     0.02%  java             libc-2.29.so        [.] __clone
+     0.02%  java             libpthread-2.29.so  [.] start_thread
+     0.02%  Signal Dispatch  libjvm.so           [.] 0x0000000000d5adbc
+     0.01%  java             libc-2.29.so        [.] tcache_init.part.0
+     0.01%  VM Thread        libjvm.so           [.] 0x0000000000c71a7b
+     0.01%  C2 CompilerThre  libjvm.so           [.] 0x0000000000b7ab31
+     0.01%  java             java                [.] 0x0000000000001153
+     0.01%  Sweeper thread   libjvm.so           [.] 0x0000000000bb0753
+     0.01%  C2 CompilerThre  ld-2.29.so          [.] __tls_get_addr
+     0.01%  Sweeper thread   libjvm.so           [.] 0x00000000007f6400
+     0.01%  VM Periodic Tas  [vdso]              [.] __vdso_clock_gettime
+     0.01%  java             libc-2.29.so        [.] __ctype_init
+     0.01%  C1 CompilerThre  libpthread-2.29.so  [.] pthread_cond_timedwait@@GLIBC_2.3.2
+     0.00%  GC Thread#0      libpthread-2.29.so  [.] __pthread_disable_asynccancel
+     0.00%  java             [JIT] tid 1347      [.] 0x00007f9ab8f04195
+     0.00%  C2 CompilerThre  libpthread-2.29.so  [.] pthread_cond_timedwait@@GLIBC_2.3.2
+     0.00%  G1 Young RemSet  [unknown]           [k] 0xffffffff8a800b07
+     0.00%  Signal Dispatch  [unknown]           [k] 0xffffffff8a800b07
+     0.00%  VM Thread        libpthread-2.29.so  [.] __pthread_disable_asynccancel
+     0.00%  java             libpthread-2.29.so  [.] __GI___pthread_timedjoin_ex
+     0.00%  Sweeper thread   libpthread-2.29.so  [.] __pthread_disable_asynccancel
+     0.00%  Sweeper thread   libpthread-2.29.so  [.] pthread_cond_timedwait@@GLIBC_2.3.2
+     0.00%  VM Periodic Tas  libpthread-2.29.so  [.] pthread_cond_timedwait@@GLIBC_2.3.2
+     0.00%  C1 CompilerThre  [unknown]           [k] 0xffffffff8a800b07
+     0.00%  GC Thread#0      [unknown]           [k] 0xffffffff8a800b07
+     0.00%  C2 CompilerThre  [unknown]           [k] 0xffffffff8a800b07
+     0.00%  Sweeper thread   [unknown]           [k] 0xffffffff8a800b07
+     0.00%  VM Thread        [unknown]           [k] 0xffffffff8a800b07
+     0.00%  VM Periodic Tas  [unknown]           [k] 0xffffffff8a800b07
+     0.00%  C1 CompilerThre  [unknown]           [k] 0xffffffff8a80015f
+     0.00%  C2 CompilerThre  [unknown]           [k] 0xffffffff8a80015f
+     0.00%  Sweeper thread   [unknown]           [k] 0xffffffff8a80015f
+     0.00%  G1 Young RemSet  [unknown]           [k] 0xffffffff8a80015f
+     0.00%  GC Thread#0      [unknown]           [k] 0xffffffff8a80015f
+     0.00%  Signal Dispatch  [unknown]           [k] 0xffffffff8a80015f
+     0.00%  VM Periodic Tas  [unknown]           [k] 0xffffffff8a80015f
+     0.00%  VM Thread        [unknown]           [k] 0xffffffff8a80015f
+     0.00%  java             [unknown]           [k] 0xffffffff8a80015f
+
+
+#
+# (Tip: Customize output of perf script with: perf script -F event,ip,sym)
+#

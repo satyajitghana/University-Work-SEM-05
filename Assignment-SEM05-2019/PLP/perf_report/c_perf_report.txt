@@ -1,0 +1,28 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 51  of event 'cycles:u'
+# Event count (approx.): 13308992
+#
+# Overhead  Command  Shared Object     Symbol                  
+# ........  .......  ................  ........................
+#
+    34.66%  gst-c    libc-2.29.so      [.] _int_malloc
+    12.91%  gst-c    libc-2.29.so      [.] _int_free
+    10.70%  gst-c    [unknown]         [k] 0xffffffff8a800b07
+    10.13%  gst-c    libc-2.29.so      [.] malloc
+     6.74%  gst-c    libc-2.29.so      [.] malloc_consolidate
+     6.33%  gst-c    libc-2.29.so      [.] cfree@GLIBC_2.2.5
+     5.28%  gst-c    gst-c             [.] main
+     4.76%  gst-c    gst-c             [.] get_mrp
+     4.14%  gst-c    gst-c             [.] create_gst_item
+     2.87%  gst-c    gst-c             [.] array_list_at
+     1.03%  gst-c    ld-2.29.so        [.] strcmp
+     0.46%  gst-c    ld-2.29.so        [.] __GI___tunables_init
+
+
+#
+# (Tip: Add -I to perf report to sample register values visible in perf report context.)
+#

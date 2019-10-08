@@ -1,1 +1,1 @@
-/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/gst-c.dir/main.c.o CMakeFiles/gst-c.dir/array_list.c.o CMakeFiles/gst-c.dir/gst_item.c.o  -o gst-c 
+/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/gst-c.dir/main.c.o CMakeFiles/gst-c.dir/array_list.c.o CMakeFiles/gst-c.dir/gst_item.c.o  -o gst-c 

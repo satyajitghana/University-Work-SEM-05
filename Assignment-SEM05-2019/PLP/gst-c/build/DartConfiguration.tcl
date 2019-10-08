@@ -4,39 +4,29 @@
 
 
 # Configuration directories and files
-SourceDirectory: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c
-BuildDirectory: /mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build
+SourceDirectory: /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c
+BuildDirectory: /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: SHADOWLEAF-ROG
+Site: shadowleaf-manjaro
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-g++-9
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
-IsCDash: 
-CDashVersion: 
-QueryCDashVersion: 
-DropSite: 
-DropLocation: 
-DropSiteUser: 
-DropSitePassword: 
-DropSiteMode: 
-DropMethod: http
-TriggerSite: 
-ScpCommand: /usr/bin/scp
+SubmitURL: http://
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c"
+ConfigureCommand: "/usr/bin/cmake" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -49,7 +39,7 @@ CVSCommand: CVSCOMMAND-NOTFOUND
 CVSUpdateOptions: -d -A -P
 
 # Subversion options
-SVNCommand: SVNCOMMAND-NOTFOUND
+SVNCommand: /usr/bin/svn
 SVNOptions: 
 SVNUpdateOptions: 
 
@@ -72,7 +62,7 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /usr/bin/g++-9
+Compiler: /usr/bin/c++
 CompilerVersion: 9.1.0
 
 # Dynamic analysis (MemCheck)
@@ -81,7 +71,7 @@ ValgrindCommand:
 ValgrindCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: /usr/bin/valgrind
+MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

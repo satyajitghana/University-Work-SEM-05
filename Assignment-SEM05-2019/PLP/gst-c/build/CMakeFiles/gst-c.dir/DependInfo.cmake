@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.c" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles/gst-c.dir/array_list.c.o"
-  "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.c" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles/gst-c.dir/gst_item.c.o"
-  "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/main.c" "/mnt/d/University-Work/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles/gst-c.dir/main.c.o"
+  "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/array_list.c" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles/gst-c.dir/array_list.c.o"
+  "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/gst_item.c" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles/gst-c.dir/gst_item.c.o"
+  "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/main.c" "/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles/gst-c.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

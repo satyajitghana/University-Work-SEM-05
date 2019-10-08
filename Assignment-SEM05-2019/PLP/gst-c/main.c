@@ -34,5 +34,7 @@ int main(int argc, char **argv) {
 
     printf("TOTAL_ITEMS : %d\nTOTAL AMOUNT : %.10f\n", MAX_ITEMS, total_amt);
 
+    fflush(stdout);
+
     return 0;
 }
