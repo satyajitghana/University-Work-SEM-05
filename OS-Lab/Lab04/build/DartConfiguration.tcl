@@ -36,7 +36,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/cmake/bin/cmake" "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04"
+ConfigureCommand: "/usr/bin/cmake" "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04"
 MakeCommand: /opt/cmake/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

@@ -1,1 +1,1 @@
-/usr/bin/g++-9  -g  -rdynamic CMakeFiles/Lab04.dir/main.cpp.o  -o Lab04 -pthread 
+/usr/bin/g++-9  -g  -rdynamic CMakeFiles/Lab04.dir/main.cpp.o CMakeFiles/Lab04.dir/round_robin.cpp.o CMakeFiles/Lab04.dir/priority_schedule.cpp.o  -o Lab04 -pthread 

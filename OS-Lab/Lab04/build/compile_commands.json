@@ -3,5 +3,15 @@
   "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/build",
   "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Lab04.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/main.cpp",
   "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/main.cpp"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Lab04.dir/round_robin.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/round_robin.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/round_robin.cpp"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Lab04.dir/priority_schedule.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/priority_schedule.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab04/priority_schedule.cpp"
 }
 ]

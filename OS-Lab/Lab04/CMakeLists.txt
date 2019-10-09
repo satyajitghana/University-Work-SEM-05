@@ -7,7 +7,7 @@ enable_testing()
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 
-add_executable(Lab04 main.cpp)
+add_executable(Lab04 main.cpp scheduling_algo.hpp round_robin.hpp round_robin.cpp priority_schedule.cpp priority_schedule.hpp)
 
 target_link_libraries(Lab04 Threads::Threads)
 
