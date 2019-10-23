@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_semaphore/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Lab05.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_semaphore/main.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_semaphore/main.cpp"
+}
+]

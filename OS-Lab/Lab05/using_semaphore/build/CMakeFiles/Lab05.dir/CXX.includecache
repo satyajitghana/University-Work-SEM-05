@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_semaphore/main.cpp
+iostream
+-
+limits
+-
+memory
+-
+random
+-
+vector
+-
+pthread.h
+-
+semaphore.h
+-
+unistd.h
+-
+

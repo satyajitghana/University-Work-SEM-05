@@ -1,0 +1,1 @@
+/usr/bin/g++-9     CMakeFiles/Lab05.dir/main.cpp.o  -o Lab05 -pthread 

@@ -1,0 +1,73 @@
+The system is: Linux - sh: 0: getcwd() failed: No such file or directory
+4.4.0-18362-Microsoft - sh: 0: getcwd() failed: No such file or directory
+x86_64
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aeee0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aeee0.dir/build.make CMakeFiles/cmTC_aeee0.dir/build
+make[1]: Entering directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aeee0.dir/testCCompiler.c.o
+/usr/bin/gcc-9    -o CMakeFiles/cmTC_aeee0.dir/testCCompiler.c.o   -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_aeee0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeee0.dir/link.txt --verbose=1
+/usr/bin/gcc-9      CMakeFiles/cmTC_aeee0.dir/testCCompiler.c.o  -o cmTC_aeee0 
+make[1]: Leaving directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c6d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c6d8.dir/build.make CMakeFiles/cmTC_3c6d8.dir/build
+make[1]: Entering directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c6d8.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc-9    -o CMakeFiles/cmTC_3c6d8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_3c6d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c6d8.dir/link.txt --verbose=1
+/usr/bin/gcc-9      CMakeFiles/cmTC_3c6d8.dir/CMakeCCompilerABI.c.o  -o cmTC_3c6d8 
+make[1]: Leaving directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55bb1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55bb1.dir/build.make CMakeFiles/cmTC_55bb1.dir/build
+make[1]: Entering directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55bb1.dir/testCXXCompiler.cxx.o
+/usr/bin/g++-9     -o CMakeFiles/cmTC_55bb1.dir/testCXXCompiler.cxx.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_55bb1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55bb1.dir/link.txt --verbose=1
+/usr/bin/g++-9       CMakeFiles/cmTC_55bb1.dir/testCXXCompiler.cxx.o  -o cmTC_55bb1 
+make[1]: Leaving directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_18e47/fast"
+/usr/bin/make -f CMakeFiles/cmTC_18e47.dir/build.make CMakeFiles/cmTC_18e47.dir/build
+make[1]: Entering directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_18e47.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++-9     -o CMakeFiles/cmTC_18e47.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_18e47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18e47.dir/link.txt --verbose=1
+/usr/bin/g++-9       CMakeFiles/cmTC_18e47.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_18e47 
+make[1]: Leaving directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ab316/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab316.dir/build.make CMakeFiles/cmTC_ab316.dir/build
+make[1]: Entering directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab316.dir/CheckIncludeFile.c.o
+/usr/bin/gcc-9    -o CMakeFiles/cmTC_ab316.dir/CheckIncludeFile.c.o   -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ab316
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab316.dir/link.txt --verbose=1
+/usr/bin/gcc-9      CMakeFiles/cmTC_ab316.dir/CheckIncludeFile.c.o  -o cmTC_ab316 
+make[1]: Leaving directory '/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab05/using_mutex/build/CMakeFiles/CMakeTmp'
+
+
