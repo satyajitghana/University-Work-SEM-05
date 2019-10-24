@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab07/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -std=gnu++1z -o CMakeFiles/Lab07.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab07/main.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Lab07/main.cpp"
+}
+]

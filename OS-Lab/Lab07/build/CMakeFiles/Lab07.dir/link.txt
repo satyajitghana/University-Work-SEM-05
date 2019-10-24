@@ -1,0 +1,1 @@
+/usr/bin/g++-9  -g  -rdynamic CMakeFiles/Lab07.dir/main.cpp.o  -o Lab07 -pthread 
