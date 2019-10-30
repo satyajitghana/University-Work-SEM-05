@@ -11,8 +11,8 @@ class file {
     std::string file_name;
     // the file descriptor
     int fd;
+    // to check if the file is closed
     bool isclosed = true;
-    //  std::map<char, int> ccount;
 
    public:
     file() {
@@ -21,8 +21,22 @@ class file {
     };
     file(std::string file_name);
     ~file();
+
+    // fetch the file descriptor
     int get_fd() { return this->fd; };
+
+    /**
+     * Returns the character count
+     * @param none
+     * @return character count as a map
+    */
     std::map<char, int> get_char_count();
+
+    /**
+     * Opens the file
+     * @param file name as a string
+     * @return none
+    */
     void open(std::string file_name);
     std::string get_file_name() { return this->file_name; };
 

@@ -1,11 +1,11 @@
 // C++ Includes
 #include <algorithm>
+#include <chrono>
 #include <iostream>
 #include <map>
 #include <memory>
 #include <numeric>
 #include <vector>
-#include <chrono>
 
 // C Includes
 #include <dirent.h>
@@ -23,6 +23,7 @@
 void help(char name[]);
 
 int main(int argc, char** argv) {
+    // vector of files
     std::vector<std::shared_ptr<bromine::file>> files;
 
     bool is_directory = false;
@@ -83,11 +84,11 @@ int main(int argc, char** argv) {
     }
 
     std::vector<void*> results;
- 
+
     auto start = std::chrono::high_resolution_clock::now();
 
     if (is_threaded) {  // MULTITHREADED
-        // transform into void* vector
+        // transform the vector of file arguments into void* vector
         std::vector<void*> fargs(files.size());
         std::transform(files.begin(), files.end(), fargs.begin(), [](std::shared_ptr<bromine::file> p) {
             return static_cast<void*>(p.get());
@@ -95,16 +96,18 @@ int main(int argc, char** argv) {
 
         // generate and run threads
         std::vector<pthread_t> threads = bromine::threader::gen_worker_threads(&bromine::file::threadable_ccount_fun, fargs);
+        // join the threads and get the results
         results = bromine::threader::get_threads_results(threads);
     } else {  // SEQUENCIAL
         for (auto& file : files) {
+            // please use shared_ptr or unique_ptr
             std::map<char, int>* ccount = new std::map<char, int>();
             *ccount = file.get()->get_char_count();
             results.emplace_back(static_cast<void*>(ccount));
         }
     }
 
-    // var to store the accumulated results
+    // variable to store the accumulated results
     std::map<char, int> accumulated_vals;
 
     // accumulate the results in the main thread
@@ -122,13 +125,16 @@ int main(int argc, char** argv) {
     auto end = std::chrono::high_resolution_clock::now();
 
     std::cout << "ACCUMULATED COUNT" << std::endl;
+
+    // print the character count
     bromine::file::print_ccount(accumulated_vals);
 
-    auto time_taken = std::chrono::duration_cast<std::chrono::nanoseconds>(end-start).count();
-    // time_taken *= 1e-9; 
+    auto time_taken = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+    // time_taken *= 1e-9;
     std::cout << "\nReal Time Elapsed : " << std::fixed << time_taken << " nanoseconds" << std::endl;
 }
 
+// for printing the help documentation
 void help(char name[]) {
     std::cerr << "USAGE : " << name << " <option(s)> SOURCES\n"
               << "Options:\n"
