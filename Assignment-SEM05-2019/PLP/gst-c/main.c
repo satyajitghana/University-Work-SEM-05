@@ -3,7 +3,7 @@
 #include "array_list.h"
 #include "gst_item.h"
 
-#define MAX_ITEMS 100000
+#define MAX_ITEMS 10000000
 
 int main(int argc, char **argv) {
     // testing

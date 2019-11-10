@@ -1,0 +1,19 @@
+Total Price for 1000000 items is 2997.0000000000
+
+ Performance counter stats for './gst-c':
+
+             49.65 msec task-clock:u              #    0.993 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                54      page-faults:u             #    0.001 M/sec                  
+        98,075,303      cycles:u                  #    1.976 GHz                    
+       195,194,068      instructions:u            #    1.99  insn per cycle         
+         8,045,404      branches:u                #  162.058 M/sec                  
+             3,842      branch-misses:u           #    0.05% of all branches        
+
+       0.049998099 seconds time elapsed
+
+       0.046683000 seconds user
+       0.003291000 seconds sys
+
+

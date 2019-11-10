@@ -6,6 +6,16 @@ default_target: all
 
 .PHONY : default_target
 
+# The main recursive all target
+all:
+
+.PHONY : all
+
+# The main recursive preinstall target
+preinstall:
+
+.PHONY : preinstall
+
 #=============================================================================
 # Special targets provided by cmake.
 
@@ -52,11 +62,6 @@ CMAKE_BINARY_DIR = /mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gs
 #=============================================================================
 # Directory level rules for the build root directory
 
-# The main recursive "all" target.
-all: CMakeFiles/gst-c.dir/all
-
-.PHONY : all
-
 # The main recursive "clean" target.
 clean: CMakeFiles/gst-c.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
@@ -90,11 +95,6 @@ clean: CMakeFiles/ContinuousConfigure.dir/clean
 
 .PHONY : clean
 
-# The main recursive "preinstall" target.
-preinstall:
-
-.PHONY : preinstall
-
 #=============================================================================
 # Target rules for target CMakeFiles/gst-c.dir
 
@@ -104,6 +104,11 @@ CMakeFiles/gst-c.dir/all:
 	$(MAKE) -f CMakeFiles/gst-c.dir/build.make CMakeFiles/gst-c.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/data/University-Work-SEM-05/Assignment-SEM05-2019/PLP/gst-c/build/CMakeFiles --progress-num=1,2,3,4 "Built target gst-c"
 .PHONY : CMakeFiles/gst-c.dir/all
+
+# Include target in all.
+all: CMakeFiles/gst-c.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gst-c.dir/rule: cmake_check_build_system

@@ -1,0 +1,20 @@
+		GST CALCULATOR
+Total Price of 1000000 items : 782054848.0000000000
+
+ Performance counter stats for 'java -cp PLPAssignCorrect/bin/ plpassigncorrect.PLPAssignCorrect':
+
+          4,369.48 msec task-clock:u              #    2.156 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+           106,676      page-faults:u             #    0.024 M/sec                  
+     6,923,457,891      cycles:u                  #    1.585 GHz                    
+    10,333,421,995      instructions:u            #    1.49  insn per cycle         
+     1,684,491,483      branches:u                #  385.513 M/sec                  
+        10,030,479      branch-misses:u           #    0.60% of all branches        
+
+       2.026316834 seconds time elapsed
+
+       3.986358000 seconds user
+       0.367631000 seconds sys
+
+

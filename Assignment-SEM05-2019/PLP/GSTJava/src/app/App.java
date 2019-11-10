@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class App {
 
-    public static int MAX_ITEMS = 100000;
+    public static int MAX_ITEMS = 10000000;
 
     public static void main(String[] args) throws Exception {
         // testing
