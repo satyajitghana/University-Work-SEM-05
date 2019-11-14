@@ -1,20 +1,20 @@
-TOTAL_ITEMS : 10000000
-TOTAL AMOUNT : 11265630013.4887523651
+TOTAL_ITEMS : 100000
+TOTAL AMOUNT : 112656300.1282616258
 
  Performance counter stats for 'gst-c/build/gst-c':
 
-            976.70 msec task-clock:u              #    0.978 CPUs utilized          
+              9.54 msec task-clock:u              #    0.967 CPUs utilized          
                  0      context-switches:u        #    0.000 K/sec                  
                  0      cpu-migrations:u          #    0.000 K/sec                  
-            97,709      page-faults:u             #    0.100 M/sec                  
-     1,334,998,758      cycles:u                  #    1.367 GHz                    
-     4,206,621,972      instructions:u            #    3.15  insn per cycle         
-       901,448,622      branches:u                #  922.954 M/sec                  
-           331,942      branch-misses:u           #    0.04% of all branches        
+             1,031      page-faults:u             #    0.108 M/sec                  
+        13,126,242      cycles:u                  #    1.376 GHz                    
+        46,010,443      instructions:u            #    3.51  insn per cycle         
+         9,413,655      branches:u                #  986.741 M/sec                  
+             4,664      branch-misses:u           #    0.05% of all branches        
 
-       0.998173867 seconds time elapsed
+       0.009869029 seconds time elapsed
 
-       0.685913000 seconds user
-       0.272802000 seconds sys
+       0.003299000 seconds user
+       0.006539000 seconds sys
 
 

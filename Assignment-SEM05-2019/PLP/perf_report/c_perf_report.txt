@@ -3,39 +3,26 @@
 #
 # Total Lost Samples: 0
 #
-# Samples: 3K of event 'cycles:u'
-# Event count (approx.): 1393995679
+# Samples: 51  of event 'cycles:u'
+# Event count (approx.): 13308992
 #
-# Overhead  Command  Shared Object     Symbol                 
-# ........  .......  ................  .......................
+# Overhead  Command  Shared Object     Symbol                  
+# ........  .......  ................  ........................
 #
-    26.34%  gst-c    libc-2.30.so      [.] _int_malloc
-    16.11%  gst-c    libc-2.30.so      [.] _int_free
-    11.26%  gst-c    libc-2.30.so      [.] malloc_consolidate
-     9.82%  gst-c    libc-2.30.so      [.] malloc
-     8.84%  gst-c    gst-c             [.] main
-     5.52%  gst-c    [unknown]         [k] 0xffffffff9ea00b07
-     4.17%  gst-c    libc-2.30.so      [.] cfree@GLIBC_2.2.5
-     3.63%  gst-c    gst-c             [.] create_gst_item
-     3.53%  gst-c    gst-c             [.] array_list_add
-     3.46%  gst-c    gst-c             [.] array_list_at
-     2.67%  gst-c    gst-c             [.] get_mrp
-     2.12%  gst-c    gst-c             [.] free_array_list
-     0.85%  gst-c    gst-c             [.] free@plt
-     0.58%  gst-c    gst-c             [.] free_gst_item
-     0.56%  gst-c    gst-c             [.] malloc@plt
-     0.19%  gst-c    libc-2.30.so      [.] mremap_chunk
-     0.12%  gst-c    libc-2.30.so      [.] realloc
-     0.08%  gst-c    [unknown]         [k] 0xffffffff9ea0015f
-     0.03%  gst-c    libc-2.30.so      [.] unlink_chunk.isra.0
-     0.02%  gst-c    libc-2.30.so      [.] __GI___mremap
-     0.02%  gst-c    libc-2.30.so      [.] sysmalloc
-     0.02%  gst-c    libc-2.30.so      [.] __sbrk
-     0.02%  gst-c    libc-2.30.so      [.] __brk
-     0.01%  gst-c    ld-2.30.so        [.] _dl_lookup_symbol_x
-     0.01%  gst-c    ld-2.30.so        [.] _dl_dst_count
+    34.66%  gst-c    libc-2.29.so      [.] _int_malloc
+    12.91%  gst-c    libc-2.29.so      [.] _int_free
+    10.70%  gst-c    [unknown]         [k] 0xffffffff8a800b07
+    10.13%  gst-c    libc-2.29.so      [.] malloc
+     6.74%  gst-c    libc-2.29.so      [.] malloc_consolidate
+     6.33%  gst-c    libc-2.29.so      [.] cfree@GLIBC_2.2.5
+     5.28%  gst-c    gst-c             [.] main
+     4.76%  gst-c    gst-c             [.] get_mrp
+     4.14%  gst-c    gst-c             [.] create_gst_item
+     2.87%  gst-c    gst-c             [.] array_list_at
+     1.03%  gst-c    ld-2.29.so        [.] strcmp
+     0.46%  gst-c    ld-2.29.so        [.] __GI___tunables_init
 
 
 #
-# (Tip: Use parent filter to see specific call path: perf report -p <regex>)
+# (Tip: Add -I to perf report to sample register values visible in perf report context.)
 #

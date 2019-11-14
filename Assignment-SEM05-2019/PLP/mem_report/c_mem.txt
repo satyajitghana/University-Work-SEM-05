@@ -1,14 +1,14 @@
-TOTAL_ITEMS : 10000000
-TOTAL AMOUNT : 11265630013.4887523651
+TOTAL_ITEMS : 100000
+TOTAL AMOUNT : 112656300.1282616258
 
-Memory usage summary: heap total: 240005160, heap peak: 240001064, stack peak: 2112
+Memory usage summary: heap total: 2404904, heap peak: 2400808, stack peak: 2112
          total calls   total memory   failed calls
- malloc|   10000003      160006184              0
-realloc|      39062       79998976              0  (nomove:39007, dec:0, free:0)
+ malloc|     100003        1606184              0
+realloc|        390         798720              0  (nomove:342, dec:0, free:0)
  calloc|          0              0              0
-   free|   10000001      160000040
+   free|     100001        1600040
 Histogram for block sizes:
-   16-31       10000000  99% ==================================================
+   16-31         100000  99% ==================================================
    32-47              1  <1% 
  2048-2063            1  <1% 
  4096-4111            2  <1% 
@@ -41,4 +41,4 @@ Histogram for block sizes:
 59392-59407           1  <1% 
 61440-61455           1  <1% 
 63488-63503           1  <1% 
-   large          39032  <1% 
+   large            360  <1% 

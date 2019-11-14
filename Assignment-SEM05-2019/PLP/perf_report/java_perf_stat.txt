@@ -1,20 +1,20 @@
-TOTAL_ITEMS : 10000000
-TOTAL_AMOUNT : 11265630013.4887520000
+TOTAL_ITEMS : 100000
+TOTAL_AMOUNT : 112656300.1282616300
 
  Performance counter stats for 'java -cp GSTJava/bin app.App':
 
-          4,296.89 msec task-clock:u              #    1.582 CPUs utilized          
+            212.06 msec task-clock:u              #    1.459 CPUs utilized          
                  0      context-switches:u        #    0.000 K/sec                  
                  0      cpu-migrations:u          #    0.000 K/sec                  
-           146,928      page-faults:u             #    0.034 M/sec                  
-     7,278,982,030      cycles:u                  #    1.694 GHz                    
-    13,001,805,299      instructions:u            #    1.79  insn per cycle         
-     2,081,763,347      branches:u                #  484.481 M/sec                  
-         4,981,395      branch-misses:u           #    0.24% of all branches        
+             4,752      page-faults:u             #    0.022 M/sec                  
+       359,432,031      cycles:u                  #    1.695 GHz                    
+       411,960,222      instructions:u            #    1.15  insn per cycle         
+        78,327,254      branches:u                #  369.371 M/sec                  
+         2,874,409      branch-misses:u           #    3.67% of all branches        
 
-       2.716024623 seconds time elapsed
+       0.145300220 seconds time elapsed
 
-       3.715426000 seconds user
-       0.560803000 seconds sys
+       0.189254000 seconds user
+       0.026494000 seconds sys
 
 
