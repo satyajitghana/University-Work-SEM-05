@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/build",
-  "command": "/bin/g++    -g   -o CMakeFiles/Lab06Client.dir/main.cpp.o -c /mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp",
-  "file": "/mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp"
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/build",
+  "command": "/usr/bin/g++-9    -g   -o CMakeFiles/Lab06Client.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp"
 }
 ]

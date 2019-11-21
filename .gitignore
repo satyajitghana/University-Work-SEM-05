@@ -12,3 +12,5 @@
 /SIM-Lab/Lab07/build/
 *desktop.ini
 *.o
+/SIM-Lab/Lab06/nbproject/private/
+/SIM-Lab/Lab06/build/

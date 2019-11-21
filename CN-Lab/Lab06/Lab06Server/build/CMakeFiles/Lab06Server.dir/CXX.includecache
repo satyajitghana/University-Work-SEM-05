@@ -6,17 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab06/Lab06Server/main.cpp
-unistd.h
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab06/Lab06Server/main.cpp
+netinet/in.h
 -
 stdio.h
 -
-sys/socket.h
--
 stdlib.h
 -
-netinet/in.h
--
 string.h
+-
+sys/socket.h
+-
+unistd.h
+-
+iostream
+-
+string
 -
 

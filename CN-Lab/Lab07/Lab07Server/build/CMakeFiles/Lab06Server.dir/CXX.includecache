@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab07Server/main.cpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab07/Lab07Server/main.cpp
 netinet/in.h
 -
 stdio.h

@@ -13,16 +13,18 @@ public class NegativeBinomialDistribution extends Distribution {
     
     Double P;
     Long R;
+    Long N;
 
-    public NegativeBinomialDistribution(DISTR_TYPE currentDistr, Double P, Long R) {
+    public NegativeBinomialDistribution(DISTR_TYPE currentDistr, Double P, Long N, Long R) {
         super(currentDistr);
         this.P = P;
         this.R = R;
+        this.N = N;
     }
 
     @Override
     public Double getDistribution() {
-        return R / P;
+        return choose(N-1, R-1) * Math.pow(P, N-R) * (double)Math.pow(1-P, R);
     }
 
     @Override

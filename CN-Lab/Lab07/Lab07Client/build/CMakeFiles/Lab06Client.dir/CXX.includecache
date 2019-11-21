@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab07/Lab07Client/main.cpp
 arpa/inet.h
 -
 stdio.h

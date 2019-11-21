@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/data/University-Work-SEM-05/CN-Lab/Lab07/Lab06Client/main.cpp
+/mnt/d/University-Work/University-Work-SEM-05/CN-Lab/Lab08/Lab06Client/main.cpp
 stdio.h
 -
 sys/socket.h

@@ -16,6 +16,9 @@ public class BinomialDistribution extends Distribution {
     
     public BinomialDistribution(DISTR_TYPE currentDistr, Long N, Double P, Long K) {
         super(currentDistr);
+        this.N = N;
+        this.P = P;
+        this.K = K;
     }
     
     public Double binomialDistribution() {

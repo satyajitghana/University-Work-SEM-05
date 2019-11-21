@@ -1,1 +1,1 @@
-/bin/g++  -g  -rdynamic CMakeFiles/Lab06Client.dir/main.cpp.o  -o Lab06Client 
+/usr/bin/g++-9  -g  -rdynamic CMakeFiles/Lab06Client.dir/main.cpp.o  -o Lab06Client 

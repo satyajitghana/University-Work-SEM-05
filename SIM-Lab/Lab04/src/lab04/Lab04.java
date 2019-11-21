@@ -36,7 +36,7 @@ public class Lab04 {
                 Long N = input.nextLong();
                 System.out.print("Enter X : ");
                 Long K = input.nextLong();
-                System.out.println("Enter P (success) : ");
+                System.out.print("Enter P (success) : ");
                 Double P = input.nextDouble();
 
                 distr = new BinomialDistribution(currDistr, N, P, K);
@@ -58,10 +58,12 @@ public class Lab04 {
                 currDistr = Distribution.DISTR_TYPE.NBINOM;
                 System.out.print("Enter P (success) : ");
                 Double P = input.nextDouble();
+                System.out.print("Enter N : ");
+                Long N = input.nextLong();
                 System.out.print("Enter R : ");
                 Long R = input.nextLong();
 
-                distr = new NegativeBinomialDistribution(currDistr, P, R);
+                distr = new NegativeBinomialDistribution(currDistr, P, N, R);
             }
             break;
             case 4: {
