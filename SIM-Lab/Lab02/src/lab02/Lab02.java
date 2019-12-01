@@ -27,11 +27,12 @@ public class Lab02 {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the Number of Requests : ");
-        Integer N = input.nextInt();
+//        System.out.print("Enter the Number of Requests : ");
+//        Integer N = input.nextInt();
+        Integer N = 10;
 
-        Random rand = new Random();
-        
+        Random rand = new Random(0);
+
         // Taking it as input
 //        List<Integer> IAT = new ArrayList<>();
 //        List<Integer> ST = new ArrayList<>();
@@ -47,11 +48,19 @@ public class Lab02 {
 //        for (int i = 0 ; i < N ; i++) {
 //            ST.add(input.nextInt());
 //        }
-
         // Inter Arrival Times range from 1 - 8 mins
-        List<Integer> IAT = IntStream.range(0, N + 1).mapToObj(i -> rand.nextInt(8) + 1).collect(Collectors.toList());
+//        List<Integer> IAT = IntStream.range(0, N + 1).mapToObj(i -> rand.nextInt(80) + 1).collect(Collectors.toList());
         // Service Time ranges from 1 - 6 mins
-        List<Integer> ST = IntStream.range(0, N + 1).mapToObj(i -> rand.nextInt(6) + 1).collect(Collectors.toList());
+//        List<Integer> ST = IntStream.range(0, N + 1).mapToObj(i -> rand.nextInt(60) + 1).collect(Collectors.toList());
+        List<Integer> IAT = new ArrayList<>();
+        List<Integer> ST = new ArrayList<>();
+
+        IAT.add(0);
+        ST.add(0);
+        for (int i = 1; i <= N; i++) {
+            IAT.add(rand.nextInt(80) + 1);
+            ST.add(rand.nextInt(60) + 1);
+        }
 
         Map<String, List<Integer>> SIM_TAB = new HashMap<>();
 
@@ -73,10 +82,10 @@ public class Lab02 {
             }
 
             SIM_TAB.get("SE").set(i, SIM_TAB.get("SS").get(i) + SIM_TAB.get("ST").get(i));
-            
+
             SIM_TAB.get("WAIT").set(i, SIM_TAB.get("SS").get(i) - SIM_TAB.get("AT").get(i));
-            
-            SIM_TAB.get("IDLE").set(i, SIM_TAB.get("AT").get(i) - SIM_TAB.get("SE").get(i-1) >= 0 ? SIM_TAB.get("AT").get(i) - SIM_TAB.get("SE").get(i-1) : 0);
+
+            SIM_TAB.get("IDLE").set(i, SIM_TAB.get("AT").get(i) - SIM_TAB.get("SE").get(i - 1) >= 0 ? SIM_TAB.get("AT").get(i) - SIM_TAB.get("SE").get(i - 1) : 0);
         }
 
         System.out.println("REQNO\tIAT\tAT\tSS\tSE\tST\tWAIT\tIDLE");
@@ -91,7 +100,7 @@ public class Lab02 {
                     + SIM_TAB.get("IDLE").get(i);
             System.out.println(out);
         }
-        
+
         // Avg WAIT, Avg. Ser, Avg. IAT
         OptionalDouble avgWAIT = SIM_TAB.get("WAIT").stream().mapToDouble(a -> a).average();
         OptionalDouble avgService = SIM_TAB.get("ST").stream().mapToDouble(a -> a).average();
