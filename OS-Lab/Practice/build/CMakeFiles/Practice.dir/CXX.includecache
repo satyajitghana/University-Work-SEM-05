@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/fileio.cpp
+iostream
+-
+ctype.h
+-
+fcntl.h
+-
+pthread.h
+-
+stdbool.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/main.cpp
+stdio.h
+-
+stdlib.h
+-
+
+/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/rw.cpp
+pthread.h
+-
+semaphore.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+

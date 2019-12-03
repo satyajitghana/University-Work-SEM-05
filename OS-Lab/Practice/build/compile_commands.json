@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Practice.dir/main.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/main.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/main.cpp"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Practice.dir/fileio.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/fileio.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/fileio.cpp"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Practice.dir/rw.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/rw.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/rw.cpp"
+}
+]
