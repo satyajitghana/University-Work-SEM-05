@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/banker.cpp" "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build/CMakeFiles/Practice.dir/banker.cpp.o"
   "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/fileio.cpp" "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build/CMakeFiles/Practice.dir/fileio.cpp.o"
   "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/main.cpp" "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build/CMakeFiles/Practice.dir/main.cpp.o"
   "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/rw.cpp" "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build/CMakeFiles/Practice.dir/rw.cpp.o"

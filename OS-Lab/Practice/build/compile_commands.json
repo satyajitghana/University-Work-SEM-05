@@ -13,5 +13,10 @@
   "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build",
   "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Practice.dir/rw.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/rw.cpp",
   "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/rw.cpp"
+},
+{
+  "directory": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/build",
+  "command": "/usr/bin/g++-9    -g   -pthread -o CMakeFiles/Practice.dir/banker.cpp.o -c /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/banker.cpp",
+  "file": "/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/banker.cpp"
 }
 ]

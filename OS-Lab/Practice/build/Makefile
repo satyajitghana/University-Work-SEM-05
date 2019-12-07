@@ -520,6 +520,33 @@ ContinuousConfigure/fast:
 	$(MAKE) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
+banker.o: banker.cpp.o
+
+.PHONY : banker.o
+
+# target to build an object file
+banker.cpp.o:
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/banker.cpp.o
+.PHONY : banker.cpp.o
+
+banker.i: banker.cpp.i
+
+.PHONY : banker.i
+
+# target to preprocess a source file
+banker.cpp.i:
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/banker.cpp.i
+.PHONY : banker.cpp.i
+
+banker.s: banker.cpp.s
+
+.PHONY : banker.s
+
+# target to generate assembly for a file
+banker.cpp.s:
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/banker.cpp.s
+.PHONY : banker.cpp.s
+
 fileio.o: fileio.cpp.o
 
 .PHONY : fileio.o
@@ -641,6 +668,9 @@ help:
 	@echo "... NightlyCoverage"
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousConfigure"
+	@echo "... banker.o"
+	@echo "... banker.i"
+	@echo "... banker.s"
 	@echo "... fileio.o"
 	@echo "... fileio.i"
 	@echo "... fileio.s"

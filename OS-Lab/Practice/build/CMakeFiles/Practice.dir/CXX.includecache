@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/banker.cpp
+stdio.h
+-
+stdlib.h
+-
+
 /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/fileio.cpp
 iostream
 -
@@ -25,6 +31,10 @@ unistd.h
 -
 
 /mnt/d/University-Work/University-Work-SEM-05/OS-Lab/Practice/main.cpp
+pthread.h
+-
+semaphore.h
+-
 stdio.h
 -
 stdlib.h
